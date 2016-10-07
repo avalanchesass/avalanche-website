@@ -1,0 +1,29 @@
+{
+  "name": "avalanchesass-website",
+  "description": "Website generator for the avalanche framework",
+  "keywords": [
+    "avalanchesass"
+  ],
+  "version": "0.0.1",
+  "author": "Markus Oberlehner",
+  "homepage": "https://avalanche.oberlehner.net",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avalanchesass/avalanche-website"
+  },
+  "bugs": {
+    "url": "https://github.com/avalanchesass/avalanche-website/issues"
+  },
+  "devDependencies": {
+    "node-sass": "^3.10.1",
+    "node-sass-magic-importer": "^1.1.0",
+    "static-server": "^2.0.3",
+    "stylelint": "^7.3.1",
+    "stylelint-config-modularis": "1.0.0"
+  },
+  "scripts": {
+    "build": "sh scripts/build-website.sh",
+    "start": "npm run build && static-server dist"
+  }
+}
