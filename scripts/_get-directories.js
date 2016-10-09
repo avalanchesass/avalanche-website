@@ -1,5 +1,5 @@
-const path = require('path');
-const fs = require('fs');
+const fs = require(`fs`);
+const path = require(`path`);
 
 module.exports = (srcpath) =>
   fs.readdirSync(srcpath).filter((file) =>

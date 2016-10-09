@@ -1,15 +1,15 @@
 const fs = require(`fs`);
 const Handlebars = require(`handlebars`);
-const path = require(`path`);
+const htmlclean = require(`htmlclean`);
 const marked = require(`marked`);
 const mkdir = require(`mkdirp`);
-const htmlclean = require('htmlclean');
+const path = require(`path`);
 
-const _layout = path.join(process.cwd(), `views`, `layout.hbs`);
-Handlebars.registerPartial(`layout`, fs.readFileSync(_layout, `utf8`));
+const layoutHbs = path.join(process.cwd(), `views`, `layout.hbs`);
+Handlebars.registerPartial(`layout`, fs.readFileSync(layoutHbs, `utf8`));
 
-const _package = path.join(process.cwd(), `views`, `package.hbs`);
-const packageTemplate = fs.readFileSync(_package, `utf8`);
+const packageHbs = path.join(process.cwd(), `views`, `package.hbs`);
+const packageTemplate = fs.readFileSync(packageHbs, `utf8`);
 
 module.exports = (packageName, data) => {
   const distHtmlPath = path.join(process.cwd(), `dist`, `packages`, packageName);
@@ -26,5 +26,8 @@ module.exports = (packageName, data) => {
   const pattern = html.match(/\s*\n[\t\s]*/);
   html = html.replace(new RegExp(pattern, `g`), `\n`);
 
-  fs.writeFileSync(path.join(distHtmlPath, 'index.html'), html);
-}
+  try {
+    mkdir.sync(distHtmlPath);
+  } catch (error) {}
+  fs.writeFileSync(path.join(distHtmlPath, `index.html`), html);
+};

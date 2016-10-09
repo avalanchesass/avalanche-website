@@ -17,6 +17,9 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.5.0",
+    "eslint": "^3.7.1",
+    "eslint-config-modularis": "^2.0.0",
+    "eslint-plugin-import": "^2.0.0",
     "handlebars": "^4.0.5",
     "htmlclean": "^2.7.7",
     "marked": "^0.3.6",
