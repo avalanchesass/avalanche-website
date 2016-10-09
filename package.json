@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.5.0",
+    "chokidar-cli": "^1.2.0",
     "eslint": "^3.7.1",
     "eslint-config-modularis": "^2.0.0",
     "eslint-plugin-import": "^2.0.0",
@@ -34,6 +35,7 @@
   },
   "scripts": {
     "build": "sh scripts/build.sh",
+    "watch": "chokidar 'avalanche/packages/**/*' -c 'npm run build -- -d'",
     "start": "npm run build && static-server dist"
   }
 }
