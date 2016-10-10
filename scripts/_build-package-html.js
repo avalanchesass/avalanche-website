@@ -14,12 +14,13 @@ const packageTemplate = fs.readFileSync(packageHbs, `utf8`);
 module.exports = (packageName, data) => {
   const distHtmlPath = path.join(process.cwd(), `dist`, `packages`, packageName);
   const packagePath = path.join(process.cwd(), `avalanche`, `packages`, packageName);
-  let packageContent = fs.readFileSync(path.join(packagePath, `README.md`), `utf8`);
+  const packageContent = fs.readFileSync(path.join(packagePath, `README.md`), `utf8`);
 
   // Create live demo code from code example.
-  packageContent = marked(packageContent.replace(/```html((.|\n)*?)```/, `$1\`\`\`html$1\`\`\``));
+  data.packageContent = marked(
+    packageContent.replace(/```html((.|\n)*?)```/, `$1\`\`\`html$1\`\`\``)
+  );
 
-  data.packageContent = packageContent;
   let html = htmlclean(Handlebars.compile(packageTemplate)(data));
 
   // Fix <pre> indentation.
