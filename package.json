@@ -23,19 +23,19 @@
     "eslint-plugin-import": "^2.0.0",
     "handlebars": "^4.0.5",
     "htmlclean": "^2.7.7",
+    "http-server": "^0.9.0",
     "marked": "^0.3.6",
     "mkdirp": "^0.5.1",
     "node-sass": "^3.10.1",
     "node-sass-magic-importer": "^1.1.0",
     "postcss": "^5.2.4",
     "postcss-scss": "^0.3.1",
-    "static-server": "^2.0.3",
     "stylelint": "^7.3.1",
     "stylelint-config-modularis": "1.0.0"
   },
   "scripts": {
     "build": "sh scripts/build.sh",
-    "watch": "chokidar 'avalanche/packages/**/*' -c 'npm run build -- -d'",
-    "start": "npm run build && static-server dist"
+    "start": "npm run build && http-server dist -o",
+    "watch": "npm run start && chokidar 'avalanche/packages/**/*' -c 'npm run build -- -d'"
   }
 }
