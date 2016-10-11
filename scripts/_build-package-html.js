@@ -17,8 +17,9 @@ module.exports = (packageName, data) => {
   const packageContent = fs.readFileSync(path.join(packagePath, `README.md`), `utf8`);
 
   // Create live demo code from code example.
+  const matchExamples = new RegExp(`\`\`\`html((.|\n)*?)\`\`\``, `g`);
   data.packageContent = marked(
-    packageContent.replace(/```html((.|\n)*?)```/, `$1\`\`\`html$1\`\`\``)
+    packageContent.replace(matchExamples, `$1\`\`\`html$1\`\`\``)
   );
 
   let html = htmlclean(Handlebars.compile(packageTemplate)(data));
