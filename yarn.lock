@@ -198,8 +198,8 @@ aws-sign2@~0.6.0:
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"
 
 aws4@^1.2.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.4.1.tgz#fde7d5292466d230e5ee0f4e038d9dfaab08fc61"
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.5.0.tgz#0a29ffb79c31c9e712eeb087e8e7a64b4a56d755"
 
 balanced-match@^0.4.0, balanced-match@^0.4.1:
   version "0.4.2"
@@ -300,8 +300,8 @@ camelcase@^3.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-3.0.0.tgz#32fc4b9fcdaf845fcdf7e73bb97cac2261f0ab0a"
 
 caniuse-db@^1.0.30000187, caniuse-db@^1.0.30000539, caniuse-db@^1.0.30000540:
-  version "1.0.30000553"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000553.tgz#e7e908f43b788e6ac78fc161fedc4626d6a39f24"
+  version "1.0.30000554"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000554.tgz#cd1dbe423d00b6203ba93f05973a476428dec919"
 
 caseless@~0.11.0:
   version "0.11.0"
@@ -481,8 +481,8 @@ corser@~2.0.0:
   resolved "https://registry.yarnpkg.com/corser/-/corser-2.0.1.tgz#8eda252ecaab5840dcd975ceb90d9370c819ff87"
 
 cosmiconfig@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-2.0.1.tgz#7bd3cb61a9f5a4a807c0a04b2905a99a6a868f23"
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-2.0.2.tgz#555501957f17b849d44488d55dd2275a6452fff1"
   dependencies:
     graceful-fs "^4.1.2"
     js-yaml "^3.4.3"
