@@ -5,8 +5,8 @@ const marked = require(`marked`);
 const mkdir = require(`mkdirp`);
 const path = require(`path`);
 
-const layoutHbs = path.join(process.cwd(), `views`, `layout.hbs`);
-Handlebars.registerPartial(`layout`, fs.readFileSync(layoutHbs, `utf8`));
+const layoutHbs = path.join(process.cwd(), `views`, `layouts`, `main.hbs`);
+Handlebars.registerPartial(`layouts/main`, fs.readFileSync(layoutHbs, `utf8`));
 
 const packageHbs = path.join(process.cwd(), `views`, `package.hbs`);
 const packageTemplate = fs.readFileSync(packageHbs, `utf8`);
