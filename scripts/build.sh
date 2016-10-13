@@ -17,7 +17,7 @@ done
 
 if [ -z "$1" ]; then
   rm -Rf ./avalanche
-  git clone -b dev git@github.com:avalanchesass/avalanche.git
+  git clone -b dev https://github.com/avalanchesass/avalanche.git
 fi
 
 node ./scripts/build.js
