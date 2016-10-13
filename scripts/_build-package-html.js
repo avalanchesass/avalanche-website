@@ -5,10 +5,10 @@ const marked = require(`marked`);
 const mkdir = require(`mkdirp`);
 const path = require(`path`);
 
-const layoutHbs = path.join(process.cwd(), `views`, `layouts`, `main.hbs`);
+const layoutHbs = path.join(process.cwd(), `resources`, `views`, `layouts`, `main.hbs`);
 Handlebars.registerPartial(`layouts/main`, fs.readFileSync(layoutHbs, `utf8`));
 
-const packageHbs = path.join(process.cwd(), `views`, `package.hbs`);
+const packageHbs = path.join(process.cwd(), `resources`, `views`, `package.hbs`);
 const packageTemplate = fs.readFileSync(packageHbs, `utf8`);
 
 module.exports = (packageName, data) => {

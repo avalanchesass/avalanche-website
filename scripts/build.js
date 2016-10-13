@@ -1,8 +1,6 @@
-const path = require(`path`);
-
-const buildPackageHtml = require(path.join(__dirname, `_build-package-html.js`));
-const buildPackageCss = require(path.join(__dirname, `_build-package-css.js`));
-const getDirectories = require(path.join(__dirname, `_get-directories.js`));
+const buildPackageHtml = require(`./_build-package-html.js`);
+const buildPackageCss = require(`./_build-package-css.js`);
+const getDirectories = require(`./_get-directories.js`);
 
 const packages = getDirectories(`avalanche/packages`);
 
