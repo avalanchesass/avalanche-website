@@ -20,4 +20,5 @@ if [ -n "$1" ]; then
   git clone -b dev https://github.com/avalanchesass/avalanche.git
 fi
 
+rm -Rf ./dist
 node ./scripts/build.js
