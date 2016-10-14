@@ -36,6 +36,6 @@
   "scripts": {
     "build": "sh scripts/build.sh",
     "start": "npm run build && http-server dist -o",
-    "watch": "npm run start && chokidar 'avalanche/packages/**/*' -c 'npm run build -- -d'"
+    "watch": "npm run start && chokidar 'avalanche/packages/**/*' -c 'npm run build'"
   }
 }

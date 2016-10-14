@@ -5,7 +5,7 @@ while [[ $# -gt 1 ]]
 do
 key="$1"
 case $key in
-    -d|--dev)
+    -c|--clone)
     DEV="$2"
     shift
     ;;
@@ -15,7 +15,7 @@ esac
 shift
 done
 
-if [ -z "$1" ]; then
+if [ -n "$1" ]; then
   rm -Rf ./avalanche
   git clone -b dev https://github.com/avalanchesass/avalanche.git
 fi
