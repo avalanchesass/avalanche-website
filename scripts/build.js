@@ -6,14 +6,16 @@ const getDirectories = require(`./_get-directories.js`);
 
 const packages = getDirectories(`avalanche/packages`);
 
-const data = {};
+const data = {
+  css: `<link rel="stylesheet" href="/base/css/global.css">`
+};
 
-buildBaseHtml({});
+buildBaseHtml(data);
 buildBaseCss();
 
 packages.forEach((packageName) => {
   data.title = packageName;
-  data.css = `<link rel="stylesheet" href="css/index.css">`;
+  data.css += `<link rel="stylesheet" href="css/index.css">`;
   data.scripts = ``;
 
   buildPackageHtml(packageName, data);
