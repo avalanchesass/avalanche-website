@@ -8,14 +8,20 @@ const postcssScssSyntax = require(`postcss-scss`);
 const sass = require(`node-sass`);
 
 module.exports = (inputFile, outputFile) => {
-  let css = sass.renderSync({
+  sass.render({
     file: inputFile,
     importer: magicImporter
-  }).css.toString();
-  css = postcss(autoprefixer).process(css, { syntax: postcssScssSyntax }).css;
+  }, (error, result) => {
+    if (!error) {
+      let css = result.css.toString();
+      css = postcss(autoprefixer).process(css, { syntax: postcssScssSyntax }).css;
 
-  try {
-    mkdir.sync(path.parse(outputFile).dir);
-  } catch (error) {}
-  fs.writeFileSync(outputFile, css);
+      try {
+        mkdir.sync(path.parse(outputFile).dir);
+      } catch (e) {}
+      fs.writeFileSync(outputFile, css);
+    } else {
+      console.log(error);
+    }
+  });
 };
