@@ -1,13 +1,15 @@
 const fs = require(`fs`);
+const glob = require(`glob`);
 const path = require(`path`);
 
 const buildHtml = require(`./_build-html.js`);
 
-const baseHbs = path.join(process.cwd(), `resources`, `views`, `index.hbs`);
-const baseTemplate = fs.readFileSync(baseHbs, `utf8`);
+const pages = glob.sync(path.join(process.cwd(), `pages`, `**`, `*.hbs`));
 
 module.exports = (data) => {
-  const outputFile = path.join(process.cwd(), `dist`, `index.html`);
-
-  buildHtml(baseTemplate, data, outputFile);
+  pages.forEach((page) => {
+    const baseTemplate = fs.readFileSync(page, `utf8`);
+    const outputFile = path.join(process.cwd(), `dist`, `${path.parse(page).name}.html`);
+    buildHtml(baseTemplate, data, outputFile);
+  });
 };
