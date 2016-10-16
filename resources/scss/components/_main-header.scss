@@ -1,0 +1,12 @@
+.c-main-header {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  background: $brand-color;
+  color: $brand-color-contrast;
+}
+
+.c-main-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

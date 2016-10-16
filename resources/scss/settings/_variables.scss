@@ -1,0 +1,13 @@
+$brand-color: #16193b;
+$brand-color-contrast: #fff;
+
+$breakpoints: (
+  s: 30em,
+  m: 45em,
+  l: 60em,
+  xl: 75em,
+);
+
+@function breakpoint($-breakpoint) {
+  @return map-get($breakpoints, $-breakpoint);
+}

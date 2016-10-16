@@ -1,5 +1,15 @@
+@mixin u-hide-visually() {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
 .u-hide-visually {
-   position: absolute !important;
-   top: -9999px !important;
-   left: -9999px !important;
+   @include u-hide-visually;
+}
+
+.u-hide-visually2s {
+  @media (max-width: breakpoint('s')) {
+    @include u-hide-visually;
+  }
 }
