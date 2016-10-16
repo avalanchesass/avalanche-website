@@ -10,6 +10,9 @@ Handlebars.registerPartial(`layouts/main`, fs.readFileSync(layoutHbs, `utf8`));
 const headerHbs = path.join(process.cwd(), `resources`, `views`, `partials`, `header.hbs`);
 Handlebars.registerPartial(`partials/header`, fs.readFileSync(headerHbs, `utf8`));
 
+const footerHbs = path.join(process.cwd(), `resources`, `views`, `partials`, `footer.hbs`);
+Handlebars.registerPartial(`partials/footer`, fs.readFileSync(footerHbs, `utf8`));
+
 module.exports = (template, data, outputFile) => {
   let html = htmlclean(Handlebars.compile(template)(data));
 
