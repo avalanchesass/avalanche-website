@@ -11,3 +11,17 @@ $breakpoints: (
 @function breakpoint($-breakpoint) {
   @return map-get($breakpoints, $-breakpoint);
 }
+
+$font-sizes: (
+  xs: 0.64em,
+  s: 0.8em,
+  m: 1em,
+  l: 1.25em,
+  xl: 1.563em,
+  xxl: 1.953em,
+  xxxl: 2.441em,
+);
+
+@function font-size($-size) {
+  @return map-get($font-sizes, $-size);
+}

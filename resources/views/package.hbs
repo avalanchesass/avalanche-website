@@ -1,3 +1,8 @@
 {{#> "layouts/main" }}
-  {{{ packageContent }}}
+  <div class="u-spacing-container-xl">
+    {{> partials/header }}
+    <div class="o-container c-package-content u-spacing-container-m">
+      {{{ packageContent }}}
+    </div>
+  </div>
 {{/ "layouts/main" }}
