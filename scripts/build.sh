@@ -21,6 +21,4 @@ if [ -n "$1" ]; then
 fi
 
 rm -Rf ./dist
-mkdir -p ./dist/libs
-cp -R ./resources/libs ./dist
 node ./scripts/build.js
