@@ -2730,7 +2730,7 @@ stylelint-config-modularis@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-modularis/-/stylelint-config-modularis-1.0.0.tgz#cd79e250dd2a688699699ebbd65b3a346fa7d6bb"
 
-stylelint@^7.3.1:
+stylelint@^7.4.2:
   version "7.4.2"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-7.4.2.tgz#b4ea1d71b2950d9a0b408877594f7d1ecb2b992e"
   dependencies:
