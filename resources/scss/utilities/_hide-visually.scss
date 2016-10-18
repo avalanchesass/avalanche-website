@@ -1,11 +1,12 @@
-@mixin u-hide-visually() {
+// stylelint-disable declaration-no-important
+@mixin u-hide-visually {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
 }
 
 .u-hide-visually {
-   @include u-hide-visually;
+  @include u-hide-visually;
 }
 
 .u-hide-visually2s {

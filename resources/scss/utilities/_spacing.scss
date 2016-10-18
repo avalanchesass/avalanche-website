@@ -1,11 +1,12 @@
+// stylelint-disable declaration-no-important
 .u-spacing-container-m {
   > * + * {
-    margin-top: 1.25em;
+    margin-top: 1.25em !important;
   }
 }
 
 .u-spacing-container-xl {
   > * + * {
-    margin-top: 5em;
+    margin-top: 5em !important;
   }
 }
