@@ -21,6 +21,7 @@ module.exports = (inputFile, outputFile) => {
       } catch (e) {}
       fs.writeFileSync(outputFile, css);
     } else {
+      // eslint-disable-next-line no-console
       console.log(error);
     }
   });
