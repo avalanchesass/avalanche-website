@@ -1,6 +1,15 @@
 $brand-color: #16193b;
 $brand-color-contrast: #fff;
 
+$colors: (
+  gray-a: #f8f8f8,
+  gray-b: #efefef,
+);
+
+@function color($-color) {
+  @return map-get($colors, $-color);
+}
+
 $breakpoints: (
   s: 30em,
   m: 45em,
