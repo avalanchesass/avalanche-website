@@ -3,6 +3,7 @@ const declarationBlockPropertiesOrder = require('./.csscomb.json')['sort-order']
 module.exports = {
   extends: `stylelint-config-modularis`,
   rules: {
-    'declaration-block-properties-order': declarationBlockPropertiesOrder
+    'declaration-block-properties-order': declarationBlockPropertiesOrder,
+    'no-indistinguishable-colors': [true, { threshold: 1 }]
   }
 };
