@@ -38,6 +38,7 @@
   "scripts": {
     "build": "sh scripts/build.sh",
     "start": "npm run build && http-server dist -o",
-    "watch": "npm run start && chokidar 'avalanche/packages/**/*' -c 'npm run build'"
+    "watch": "npm run start && chokidar 'avalanche/packages/**/*' -c 'npm run build'",
+    "lint": "stylelint 'resources/**/*.scss'"
   }
 }

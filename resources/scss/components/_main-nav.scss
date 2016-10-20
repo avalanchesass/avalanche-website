@@ -3,9 +3,9 @@
 }
 
 .c-main-nav__link {
+  display: block;
   color: currentColor;
   text-decoration: none;
-  display: block;
 
   &:hover,
   &:focus {

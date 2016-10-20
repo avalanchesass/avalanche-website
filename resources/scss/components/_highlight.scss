@@ -2,8 +2,8 @@
   display: block;
   overflow-x: auto;
   padding: 1.5em;
-  color: #333;
   background: color('gray-a');
+  color: #333;
 }
 
 .c-highlight__comment,
@@ -16,7 +16,7 @@
 .c-highlight__selector-tag,
 .c-highlight__subst {
   color: #333;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .c-highlight__number,
@@ -36,24 +36,24 @@
 .c-highlight__section,
 .c-highlight__selector-id {
   color: #900;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .c-highlight__subst {
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .c-highlight__type,
 .c-highlight__class .c-highlight__title {
   color: #458;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .c-highlight__tag,
 .c-highlight__name,
 .c-highlight__attribute {
   color: #000080;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .c-highlight__regexp,
@@ -73,7 +73,7 @@
 
 .c-highlight__meta {
   color: #999;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .c-highlight__deletion {
@@ -89,5 +89,5 @@
 }
 
 .c-highlight__strong {
-  font-weight: bold;
+  font-weight: 700;
 }
