@@ -40,3 +40,17 @@ pre,
 code {
   font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 }
+
+a {
+  text-decoration: underline;
+
+  &,
+  &:visited {
+    color: $brand-color;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
