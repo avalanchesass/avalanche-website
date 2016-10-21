@@ -3,3 +3,12 @@
   border: 0.25em solid color('gray-a');
   border-bottom: none;
 }
+
+.c-demo {
+  .o-grid__item > div,
+  [class^='u-width-'] {
+    padding: 1em;
+    background: color('gray-b');
+    text-align: center;
+  }
+}

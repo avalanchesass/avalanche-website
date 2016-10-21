@@ -5,7 +5,7 @@ module.exports = {
   rules: {
     'at-rule-empty-line-before': ['always', {
       except: ['blockless-group'],
-      ignore: ['after-comment']
+      ignore: ['after-comment', 'all-nested']
     }],
     'declaration-block-properties-order': declarationBlockPropertiesOrder,
     'no-indistinguishable-colors': [true, { threshold: 1 }]
