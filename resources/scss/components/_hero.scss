@@ -1,6 +1,6 @@
 .c-hero {
-  padding-top: 6em;
-  padding-bottom: 6em;
+  padding-top: spacing(xxxl);
+  padding-bottom: spacing(xxxl);
   background: $brand-color;
   color: $brand-color-contrast;
   text-align: center;
@@ -8,5 +8,5 @@
 
 .c-hero__sub-title {
   font-weight: 400;
-  font-size: font-size('xl');
+  font-size: font-size(xl);
 }

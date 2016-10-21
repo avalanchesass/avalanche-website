@@ -1,6 +1,6 @@
 .c-main-header {
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
+  padding-top: spacing(m);
+  padding-bottom: spacing(m);
   background: $brand-color;
 
   &,
@@ -22,7 +22,7 @@
 }
 
 .c-main-header__logo {
-  margin-bottom: 0.75em;
+  margin-bottom: spacing(m);
 
   &,
   svg {

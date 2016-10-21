@@ -1,6 +1,6 @@
 .c-main-footer {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  background: color('gray-a');
+  padding-top: spacing(s);
+  padding-bottom: spacing(s);
+  background: color(a, gray);
   text-align: center;
 }

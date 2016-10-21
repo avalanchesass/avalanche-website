@@ -1,11 +1,11 @@
 .u-spacing-container-m {
   > * + * {
-    margin-top: 1.25em !important;
+    margin-top: spacing(m) !important;
   }
 }
 
-.u-spacing-container-xl {
+.u-spacing-container-xxxl {
   > * + * {
-    margin-top: 5em !important;
+    margin-top: spacing(xxxl) !important;
   }
 }

@@ -1,7 +1,7 @@
 .o-container {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: spacing(m, rem);
+  padding-left: spacing(m, rem);
   max-width: 50rem;
 }
