@@ -5,6 +5,8 @@ const mkdir = require(`mkdirp`);
 const path = require(`path`);
 const uncss = require(`uncss`);
 
+const version = require(`../package.json`).version;
+
 const filenameMatcher = /^ filename: (.*?) \*\*\*\/\n/;
 
 uncss(glob.sync(path.join(`dist`, `**`, `*.html`)), { htmlroot: `dist` }, (error, output) => {
@@ -13,7 +15,7 @@ uncss(glob.sync(path.join(`dist`, `**`, `*.html`)), { htmlroot: `dist` }, (error
   output.split(`/*** uncss>`)
     .filter((x) => x.length)
     .forEach((x) => {
-      const outputFile = x.match(filenameMatcher)[1].replace(`.css`, `.min.css`);
+      const outputFile = x.match(filenameMatcher)[1].replace(`.css`, `.${version}.min.css`);
       const css = x.replace(filenameMatcher, ``);
       const minifiedCss = new CleanCss().minify(css).styles;
 
