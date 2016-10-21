@@ -7,9 +7,3 @@
 .u-hide-visually {
   @include u-hide-visually;
 }
-
-.u-hide-visually2s {
-  @media (max-width: breakpoint('s')) {
-    @include u-hide-visually;
-  }
-}

@@ -11,6 +11,25 @@
 
 .c-main-header__inner {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+
+  @media (min-width: 33em) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.c-main-header__logo {
+  margin-bottom: 0.75em;
+
+  &,
+  svg {
+    display: block;
+  }
+
+  @media (min-width: 33em) {
+    margin-bottom: 0;
+  }
 }
