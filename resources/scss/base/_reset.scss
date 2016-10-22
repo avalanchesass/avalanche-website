@@ -44,11 +44,6 @@ code {
 a {
   text-decoration: underline;
 
-  &,
-  &:visited {
-    color: $brand-color;
-  }
-
   &:hover,
   &:focus {
     text-decoration: none;

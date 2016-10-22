@@ -10,3 +10,13 @@
   font-weight: 400;
   font-size: font-size(xl);
 }
+
+.c-hero__cta {
+  margin-top: spacing(xl);
+}
+
+.c-hero__secondary {
+  display: inline-block;
+  margin-top: spacing(m);
+  color: $brand-color-contrast;
+}

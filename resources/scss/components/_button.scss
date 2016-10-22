@@ -1,0 +1,29 @@
+.c-button {
+  display: inline-block;
+  padding: spacing(xs) spacing(m);
+  background: color(b);
+  color: color(b, contrast);
+  text-decoration: none;
+  transition: background 0.2s;
+
+  &:hover,
+  &:focus {
+    background: lighten(color(b), 5%);
+  }
+}
+
+.c-button--inverted {
+  background: color(a, contrast);
+  color: color(a);
+  transition: opacity 0.2s;
+
+  &:hover,
+  &:focus {
+    background: color(a, contrast);
+    opacity: 0.8;
+  }
+}
+
+.c-button--l {
+  padding: spacing(s) spacing(l);
+}

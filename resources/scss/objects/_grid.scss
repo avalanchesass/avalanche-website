@@ -1,0 +1,21 @@
+.o-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: (spacing(m) * -1);
+  margin-left: (spacing(m) * -1);
+}
+
+.o-grid--horizontal-xxxl {
+  margin-top: (spacing(xxxl) * -1);
+}
+
+.o-grid__item {
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding-top: spacing(m);
+  padding-left: spacing(m);
+}
+
+.o-grid__item--horizontal-xxxl {
+  padding-top: spacing(xxxl);
+}
