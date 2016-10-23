@@ -1,10 +1,13 @@
+$-border-width: (spacing(xs) / 2);
+
 .c-button {
   display: inline-block;
-  padding: spacing(xs) spacing(m);
+  padding: (spacing(xs) - $-border-width) (spacing(m) - $-border-width);
+  border: $-border-width solid color(b);
   background: color(b);
   color: color(b, contrast);
   text-decoration: none;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
 
   &:hover,
   &:focus {
@@ -13,12 +16,9 @@
 }
 
 .c-button--inverted {
-  $-border-width: (spacing(xs) / 2);
-  padding: (spacing(xs) - $-border-width) (spacing(m) - $-border-width);
-  border: $-border-width solid color(a, contrast);
+  border-color: color(a, contrast);
   background: color(a, contrast);
   color: color(a);
-  transition: background 0.2s, color 0.2s;
 
   &:hover,
   &:focus {
