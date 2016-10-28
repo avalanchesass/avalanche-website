@@ -188,7 +188,7 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
-autoprefixer@^6.0.0, autoprefixer@^6.5.0:
+autoprefixer@^6.0.0, autoprefixer@^6.5.1:
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-6.5.1.tgz#ae759a5221e709f3da17c2d656230e67c43cbb75"
   dependencies:
@@ -564,9 +564,9 @@ css-select@~1.2.0:
     domutils "1.5.1"
     nth-check "~1.0.1"
 
-css-selector-extract@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/css-selector-extract/-/css-selector-extract-1.3.0.tgz#1c0da2df7a969a8e95a3da037ce792d6f932a085"
+css-selector-extract@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/css-selector-extract/-/css-selector-extract-1.3.1.tgz#7780ecbfd729d02a6e09bad1f847a60b0fc95bc1"
   dependencies:
     postcss "^5.2.0"
   optionalDependencies:
@@ -882,7 +882,7 @@ eslint-module-utils@^1.0.0:
     debug "2.2.0"
     pkg-dir "^1.0.0"
 
-eslint-plugin-import@^2.0.0:
+eslint-plugin-import@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.0.1.tgz#dcfe96357d476b3f822570d42c29bec66f5d9c5c"
   dependencies:
@@ -897,9 +897,9 @@ eslint-plugin-import@^2.0.0:
     minimatch "^3.0.3"
     pkg-up "^1.0.0"
 
-eslint@^3.7.1:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.8.0.tgz#4fbbf6833d66654860c23a099c47a0f086de34b7"
+eslint@^3.8.1:
+  version "3.8.1"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.8.1.tgz#7d02db44cd5aaf4fa7aa489e1f083baa454342ba"
   dependencies:
     chalk "^1.1.3"
     concat-stream "^1.4.6"
@@ -1250,7 +1250,7 @@ glob-parent@^2.0.0:
   dependencies:
     is-glob "^2.0.0"
 
-glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.0, glob@^7.1.1:
+glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.1.tgz#805211df04faaf1c63a3600306cdf5ade50b2ec8"
   dependencies:
@@ -2060,42 +2060,34 @@ node-pre-gyp@^0.6.29:
     tar "~2.2.0"
     tar-pack "~3.1.0"
 
-node-sass-glob-importer@^2.0.7:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/node-sass-glob-importer/-/node-sass-glob-importer-2.0.8.tgz#3e64e9ecb20b9463cd811843e500ba3ba63447bd"
+node-sass-glob-importer@^2.0.9:
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/node-sass-glob-importer/-/node-sass-glob-importer-2.0.10.tgz#45079fd05f76355ba5012d1a830bdd74f56096e5"
   dependencies:
-    glob "^7.1.0"
+    glob "^7.1.1"
     unique-concat "^0.2.2"
-  optionalDependencies:
-    esdoc "^0.4.8"
 
-node-sass-magic-importer@^1.1.0:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/node-sass-magic-importer/-/node-sass-magic-importer-1.1.2.tgz#989b7429045cd3c4c29540e75942181cc1aa7ed7"
+node-sass-magic-importer@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/node-sass-magic-importer/-/node-sass-magic-importer-1.1.5.tgz#de2de672b8204defa0a4add35f4e0b91ec7486a5"
   dependencies:
-    node-sass-glob-importer "^2.0.7"
-    node-sass-package-importer "^2.0.0"
-    node-sass-selector-importer "^2.0.0"
+    node-sass-glob-importer "^2.0.9"
+    node-sass-package-importer "^2.0.4"
+    node-sass-selector-importer "^2.0.1"
     unique-concat "^0.2.2"
-  optionalDependencies:
-    esdoc "^0.4.8"
 
-node-sass-package-importer@^2.0.0:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/node-sass-package-importer/-/node-sass-package-importer-2.0.3.tgz#57b5198bfb9771f2deb9e0fb629095c9e239b31c"
+node-sass-package-importer@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/node-sass-package-importer/-/node-sass-package-importer-2.0.4.tgz#4921a8dce3c84eec9c06d0207d9354bd3f151c22"
   dependencies:
     resolve "^1.1.7"
-  optionalDependencies:
-    esdoc "^0.4.8"
 
-node-sass-selector-importer@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/node-sass-selector-importer/-/node-sass-selector-importer-2.0.1.tgz#b0406a0b0924650cd9a4dcca2a3a3cf92dc21404"
+node-sass-selector-importer@^2.0.1:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/node-sass-selector-importer/-/node-sass-selector-importer-2.0.2.tgz#cc8da6ddcafec9f77ec588b9fbd2579a8d70df75"
   dependencies:
-    css-selector-extract "^1.3.0"
-    postcss-scss "^0.3.0"
-  optionalDependencies:
-    esdoc "^0.4.8"
+    css-selector-extract "^1.3.1"
+    postcss-scss "^0.3.1"
 
 node-sass@^3.10.1:
   version "3.10.1"
@@ -2442,6 +2434,15 @@ postcss-value-parser@^3.1.1, postcss-value-parser@^3.2.3:
 postcss@^5.0.0, postcss@^5.0.18, postcss@^5.0.20, postcss@^5.0.21, postcss@^5.0.4, postcss@^5.0.8, postcss@^5.2.0, postcss@^5.2.4:
   version "5.2.4"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.4.tgz#8eb4bee3e5c4e091585b116df32d8db24a535f21"
+  dependencies:
+    chalk "^1.1.3"
+    js-base64 "^2.1.9"
+    source-map "^0.5.6"
+    supports-color "^3.1.2"
+
+postcss@^5.2.5:
+  version "5.2.5"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.5.tgz#ec428c27dffc7fac65961340a9b022fa4af5f056"
   dependencies:
     chalk "^1.1.3"
     js-base64 "^2.1.9"
