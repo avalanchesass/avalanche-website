@@ -38,11 +38,11 @@
     "uncss": "^0.14.1"
   },
   "scripts": {
+    "start": "npm run build && http-server dist -o",
     "build": "sh scripts/build.sh",
     "build-production": "npm run build && npm run minify && npm run pack",
     "minify": "node scripts/minify-css.js",
     "pack": "node scripts/pack.js",
-    "start": "npm run build && http-server dist -o",
     "watch": "npm run start && chokidar 'avalanche/packages/**/*' -c 'npm run build'",
     "lint": "stylelint 'resources/**/*.scss'"
   }
