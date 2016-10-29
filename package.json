@@ -19,7 +19,7 @@
     "autoprefixer": "^6.5.1",
     "chokidar-cli": "^1.2.0",
     "clean-css": "^3.4.20",
-    "eslint": "^3.8.1",
+    "eslint": "^3.9.0",
     "eslint-config-modularis": "^2.0.0",
     "eslint-plugin-import": "^2.0.1",
     "glob": "^7.1.1",
