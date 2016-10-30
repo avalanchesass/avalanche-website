@@ -39,9 +39,8 @@
   "scripts": {
     "start": "npm run build && http-server dist -o",
     "build": "sh scripts/build.sh",
-    "build-production": "npm run build && npm run minify && npm run pack",
-    "minify": "node scripts/minify-css.js",
-    "pack": "node scripts/pack.js",
+    "build-production": "npm run build && npm run minify",
+    "minify": "node scripts/minify.js",
     "lint": "stylelint 'resources/**/*.scss'"
   }
 }

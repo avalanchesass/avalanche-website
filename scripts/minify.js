@@ -2,7 +2,10 @@ const fs = require(`fs`);
 const glob = require(`glob`);
 const path = require(`path`);
 
+const minifyCss = require(`./_minify-css.js`);
 const version = require(`../package.json`).version;
+
+minifyCss();
 
 glob.sync(path.join(`dist`, `**`, `*.html`)).forEach((file) => {
   let contents = fs.readFileSync(file, { encoding: `utf8` });
