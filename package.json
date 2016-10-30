@@ -17,7 +17,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.5.1",
-    "chokidar-cli": "^1.2.0",
     "clean-css": "^3.4.20",
     "eslint": "^3.9.0",
     "eslint-config-modularis": "^2.0.0",
@@ -43,7 +42,6 @@
     "build-production": "npm run build && npm run minify && npm run pack",
     "minify": "node scripts/minify-css.js",
     "pack": "node scripts/pack.js",
-    "watch": "npm run start && chokidar 'avalanche/packages/**/*' -c 'npm run build'",
     "lint": "stylelint 'resources/**/*.scss'"
   }
 }
