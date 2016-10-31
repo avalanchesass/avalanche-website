@@ -10,7 +10,7 @@ const sass = require(`node-sass`);
 module.exports = (inputFile, outputFile) => {
   sass.render({
     file: inputFile,
-    importer: magicImporter
+    importer: magicImporter()
   }, (error, result) => {
     if (!error) {
       let css = result.css.toString();

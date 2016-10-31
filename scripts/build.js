@@ -19,7 +19,5 @@ packages.forEach((packageName) => {
   data.title = packageName;
 
   buildPackageHtml(packageName, data);
-  // Disable temporary because of:
-  // https://github.com/maoberlehner/node-sass-magic-importer/issues/68
-  // buildPackageCss(packageName);
+  buildPackageCss(packageName);
 });

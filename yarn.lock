@@ -1841,9 +1841,9 @@ node-sass-glob-importer@^2.0.9:
     glob "^7.1.1"
     unique-concat "^0.2.2"
 
-node-sass-magic-importer@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/node-sass-magic-importer/-/node-sass-magic-importer-1.1.5.tgz#de2de672b8204defa0a4add35f4e0b91ec7486a5"
+node-sass-magic-importer@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/node-sass-magic-importer/-/node-sass-magic-importer-2.1.0.tgz#d03edbac8f5f2bd810dc2f8a40d0ea000426a066"
   dependencies:
     node-sass-glob-importer "^2.0.9"
     node-sass-package-importer "^2.0.4"
