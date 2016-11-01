@@ -6,9 +6,13 @@
 
 .c-demo {
   .o-grid__item > div,
-  [class^='u-width-'] {
+  [class*='u-width-'] {
     padding: spacing(m);
     background: color(b, gray);
     text-align: center;
+  }
+
+  [class*='o-grid--vertical-gutter-'] > * {
+    width: 50%;
   }
 }
