@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.5.1",
+    "avalanchesass-object-grid": "0.0.0-alpha.efd67daa",
     "clean-css": "^3.4.20",
     "eslint": "^3.9.0",
     "eslint-config-modularis": "^2.0.0",
