@@ -7,10 +7,10 @@ const postcss = require(`postcss`);
 const postcssScssSyntax = require(`postcss-scss`);
 const sass = require(`node-sass`);
 
-module.exports = (inputFile, outputFile) => {
+module.exports = (inputFile, outputFile, options = { cwd: process.cwd() }) => {
   sass.render({
     file: inputFile,
-    importer: magicImporter()
+    importer: magicImporter(options)
   }, (error, result) => {
     if (!error) {
       let css = result.css.toString();

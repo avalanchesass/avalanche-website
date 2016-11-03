@@ -7,5 +7,5 @@ module.exports = (packageName) => {
   const inputFile = path.join(packagePath, `test`, `test.scss`);
   const outputFile = path.join(process.cwd(), `dist`, `packages`, packageName, `css`, `index.css`);
 
-  buildCss(inputFile, outputFile);
+  buildCss(inputFile, outputFile, { cwd: packagePath });
 };
