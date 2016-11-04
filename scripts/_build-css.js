@@ -12,17 +12,14 @@ module.exports = (inputFile, outputFile, options = { cwd: process.cwd() }) => {
     file: inputFile,
     importer: magicImporter(options)
   }, (error, result) => {
-    if (!error) {
-      let css = result.css.toString();
-      css = postcss(autoprefixer).process(css, { syntax: postcssScssSyntax }).css;
+    if (error) throw error;
 
-      try {
-        mkdir.sync(path.parse(outputFile).dir);
-      } catch (e) {}
+    let css = result.css.toString();
+    css = postcss(autoprefixer).process(css, { syntax: postcssScssSyntax }).css;
+
+    try {
+      mkdir.sync(path.parse(outputFile).dir);
       fs.writeFileSync(outputFile, css);
-    } else {
-      // eslint-disable-next-line no-console
-      console.log(error);
-    }
+    } catch (e) {}
   });
 };

@@ -14,9 +14,11 @@ module.exports = (data) => {
       .parse(page.replace(path.join(process.cwd(), `pages`, path.sep), ``))
       .dir.split(path.sep);
     const outputPath = [process.cwd(), `dist`, ...subPath];
+
     if (pathName !== `index`) {
       outputPath.push(pathName);
     }
+
     const outputFile = path.join(...outputPath, `index.html`);
     buildHtml(baseTemplate, data, outputFile);
   });

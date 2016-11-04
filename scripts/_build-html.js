@@ -22,6 +22,6 @@ module.exports = (template, data, outputFile) => {
 
   try {
     mkdir.sync(path.parse(outputFile).dir);
+    fs.writeFileSync(outputFile, html);
   } catch (error) {}
-  fs.writeFileSync(outputFile, html);
 };
