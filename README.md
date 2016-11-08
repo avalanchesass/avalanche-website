@@ -5,6 +5,13 @@ Website generator for the avalanche framework.
 - `yarn`
 - `yarn start`
 
+## Build
+- `yarn run build` (development)
+- `yarn run build-production` (production)
+
+## Lint
+- `yarn run lint`
+
 ## About
 ### Author
 Markus Oberlehner  
