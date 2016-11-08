@@ -2,8 +2,8 @@
 Website generator for the avalanche framework.
 
 ## Getting started
-- `npm install`
-- `npm start`
+- `yarn`
+- `yarn start`
 
 ## About
 ### Author
