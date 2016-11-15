@@ -20,7 +20,7 @@ module.exports = (inputFile, outputFile, options = { cwd: process.cwd() }) => {
     try {
       mkdir.sync(path.parse(outputFile).dir);
       fs.writeFileSync(outputFile, css);
-    } catch (error) {
+    } catch (error) { // eslint-disable-line no-shadow
       // eslint-disable-next-line no-console
       console.log(error);
     }
