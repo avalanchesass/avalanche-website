@@ -33,7 +33,7 @@
     "node-sass-magic-importer": "^2.1.1",
     "postcss": "^5.2.5",
     "postcss-scss": "^0.4.0",
-    "stylelint": "^7.5.0",
+    "stylelint": "^7.6.0",
     "stylelint-config-modularis": "^2.0.1",
     "uncss": "^0.14.1"
   },
