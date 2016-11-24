@@ -1,17 +1,17 @@
 const fs = require(`fs`);
+const glob = require(`glob`);
 const Handlebars = require(`handlebars`);
 const htmlclean = require(`htmlclean`);
 const mkdir = require(`mkdirp`);
 const path = require(`path`);
 
-const layoutHbs = path.join(process.cwd(), `resources`, `views`, `layouts`, `main.hbs`);
-Handlebars.registerPartial(`layouts/main`, fs.readFileSync(layoutHbs, `utf8`));
+const viewsDirectory = path.join(process.cwd(), `resources`, `views`);
+const views = glob.sync(path.join(viewsDirectory, `**`, `*.hbs`));
 
-const headerHbs = path.join(process.cwd(), `resources`, `views`, `partials`, `header.hbs`);
-Handlebars.registerPartial(`partials/header`, fs.readFileSync(headerHbs, `utf8`));
-
-const footerHbs = path.join(process.cwd(), `resources`, `views`, `partials`, `footer.hbs`);
-Handlebars.registerPartial(`partials/footer`, fs.readFileSync(footerHbs, `utf8`));
+views.forEach((view) => {
+  const partialName = view.replace(`${viewsDirectory}/`, ``).replace(`.hbs`, ``);
+  Handlebars.registerPartial(partialName, fs.readFileSync(view, `utf8`));
+});
 
 module.exports = (template, data, outputFile) => {
   let html = htmlclean(Handlebars.compile(template)(data));
