@@ -30,7 +30,7 @@
     "marked": "^0.3.6",
     "mkdirp": "^0.5.1",
     "node-sass": "^3.13.0",
-    "node-sass-magic-importer": "^2.1.1",
+    "node-sass-magic-importer": "^2.1.2",
     "postcss": "^5.2.5",
     "postcss-scss": "^0.4.0",
     "stylelint": "^7.6.0",

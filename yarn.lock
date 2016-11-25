@@ -1837,33 +1837,34 @@ node-gyp@^3.3.1:
     tar "^2.0.0"
     which "1"
 
-node-sass-glob-importer@^2.0.9:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/node-sass-glob-importer/-/node-sass-glob-importer-2.0.10.tgz#45079fd05f76355ba5012d1a830bdd74f56096e5"
+node-sass-glob-importer@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/node-sass-glob-importer/-/node-sass-glob-importer-3.0.0.tgz#a7845727ebd42c782f8fe57adc2ef066fb5c648a"
   dependencies:
     glob "^7.1.1"
     unique-concat "^0.2.2"
 
-node-sass-magic-importer@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/node-sass-magic-importer/-/node-sass-magic-importer-2.1.1.tgz#7fd0eb819c5d909449f3be41a7fd0e709b76cfab"
+node-sass-magic-importer@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/node-sass-magic-importer/-/node-sass-magic-importer-2.1.2.tgz#2014a797258e2275a7273da5d5c5865917f2dd2c"
   dependencies:
-    node-sass-glob-importer "^2.0.9"
-    node-sass-package-importer "^2.0.4"
-    node-sass-selector-importer "^2.0.1"
+    node-sass-glob-importer "^3.0.0"
+    node-sass-package-importer "^3.0.0"
+    node-sass-selector-importer "^3.0.0"
     unique-concat "^0.2.2"
 
-node-sass-package-importer@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/node-sass-package-importer/-/node-sass-package-importer-2.0.4.tgz#4921a8dce3c84eec9c06d0207d9354bd3f151c22"
+node-sass-package-importer@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/node-sass-package-importer/-/node-sass-package-importer-3.0.0.tgz#421875c94b42b7faf684dda046c5215fccb1b436"
   dependencies:
     resolve "^1.1.7"
 
-node-sass-selector-importer@^2.0.1:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/node-sass-selector-importer/-/node-sass-selector-importer-2.0.2.tgz#cc8da6ddcafec9f77ec588b9fbd2579a8d70df75"
+node-sass-selector-importer@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/node-sass-selector-importer/-/node-sass-selector-importer-3.0.0.tgz#58f525ce3cc0fecfdfbc6cae5e8f8a97d791d843"
   dependencies:
     css-selector-extract "^1.3.1"
+    node-sass "^3.13.0"
     postcss-scss "^0.3.1"
 
 node-sass@^3.13.0:
