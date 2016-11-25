@@ -1,8 +1,8 @@
 {
-  "name": "avalanchesass-website",
+  "name": "@avalanche/website",
   "description": "Website generator for the avalanche framework",
   "keywords": [
-    "avalanchesass"
+    "avalanche"
   ],
   "version": "0.0.1",
   "author": "Markus Oberlehner",
