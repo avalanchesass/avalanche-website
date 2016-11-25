@@ -1,17 +1,13 @@
 const fs = require(`fs`);
-const glob = require(`glob`);
 const Handlebars = require(`handlebars`);
 const htmlclean = require(`htmlclean`);
 const mkdir = require(`mkdirp`);
 const path = require(`path`);
 
-const viewsDirectory = path.join(process.cwd(), `resources`, `views`);
-const views = glob.sync(path.join(viewsDirectory, `**`, `*.hbs`));
+const handlebarsRegisterPartials = require(`./lib/handlebars-register-partials.js`);
 
-views.forEach((view) => {
-  const partialName = view.replace(`${viewsDirectory}/`, ``).replace(`.hbs`, ``);
-  Handlebars.registerPartial(partialName, fs.readFileSync(view, `utf8`));
-});
+const viewsDirectory = path.join(process.cwd(), `resources`, `views`);
+handlebarsRegisterPartials(Handlebars, viewsDirectory);
 
 module.exports = (template, data, outputFile) => {
   let html = htmlclean(Handlebars.compile(template)(data));
