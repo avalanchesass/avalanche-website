@@ -38,9 +38,9 @@
     "uncss": "^0.14.1"
   },
   "scripts": {
-    "init": "yarn && http2-server --generate-cert",
+    "init": "git clone -b dev https://github.com/avalanchesass/avalanche.git && yarn && http2-server --generate-cert",
     "start": "yarn run build && http2-server dist -o -g -P",
-    "build": "sh scripts/build.sh",
+    "build": "rm -Rf dist && node scripts/build.js",
     "build-production": "yarn run build && yarn run minify",
     "minify": "node scripts/minify.js",
     "lint": "stylelint 'resources/**/*.scss'"

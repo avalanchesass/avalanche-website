@@ -5,9 +5,9 @@ const mkdir = require(`mkdirp`);
 const path = require(`path`);
 const uncss = require(`uncss`);
 
-const version = require(`../package.json`).version;
+const version = require(`../../package.json`).version;
 
-module.exports = () => {
+module.exports = (callback = () => {}) => {
   const filenameMatcher = /^ filename: (.*?) \*\*\*\/\n/;
 
   uncss(glob.sync(path.join(`dist`, `**`, `*.html`)), { htmlroot: `dist` }, (error, output) => {
@@ -23,5 +23,7 @@ module.exports = () => {
         mkdir(path.parse(outputFile).dir);
         fs.writeFileSync(outputFile, minifiedCss);
       });
+
+    callback();
   });
 };
