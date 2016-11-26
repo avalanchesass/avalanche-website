@@ -41,8 +41,7 @@
     "init": "git clone -b dev https://github.com/avalanchesass/avalanche.git && yarn && http2-server --generate-cert",
     "start": "yarn run build && http2-server dist -o -g -P",
     "build": "rm -Rf dist && node scripts/build.js",
-    "build-production": "yarn run build && yarn run minify",
-    "minify": "node scripts/minify.js",
+    "build-production": "rm -Rf dist && node scripts/build.js --minify",
     "lint": "stylelint 'resources/**/*.scss'"
   }
 }

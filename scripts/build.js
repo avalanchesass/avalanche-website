@@ -13,10 +13,13 @@ const data = {
 buildBaseHtml(data);
 buildBaseCss();
 
-data.css += `<link rel="stylesheet" href="css/index.css">`;
-
 packages.forEach((packageName) => {
   data.title = packageName;
+
+  data.css = [
+    `<link rel="stylesheet" href="/base/css/global.css">`,
+    `<link rel="stylesheet" href="/packages/${packageName}/css/index.css">`
+  ].join(`\n`);
 
   buildPackageHtml(packageName, data);
   buildPackageCss(packageName);
