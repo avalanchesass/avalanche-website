@@ -2,7 +2,7 @@ const fs = require(`fs`);
 const glob = require(`glob`);
 const path = require(`path`);
 
-const buildHtml = require(`./_build-html.js`);
+const hbs2html = require(`../lib/hbs2html.js`);
 
 const pages = glob.sync(path.join(process.cwd(), `pages`, `**`, `*.hbs`));
 
@@ -20,6 +20,6 @@ module.exports = (data) => {
     }
 
     const outputFile = path.join(...outputPath, `index.html`);
-    buildHtml(baseTemplate, data, outputFile);
+    hbs2html(baseTemplate, data, outputFile);
   });
 };

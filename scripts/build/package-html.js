@@ -3,7 +3,7 @@ const highlightJs = require(`highlight.js`);
 const marked = require(`marked`);
 const path = require(`path`);
 
-const buildHtml = require(`./_build-html.js`);
+const hbs2html = require(`../lib/hbs2html.js`);
 
 marked.setOptions({
   highlight: (code, language) => {
@@ -37,5 +37,5 @@ module.exports = (packageName, data) => {
   .replace(new RegExp(`<p><div`, `g`), `<div`)
   .replace(new RegExp(`</div></p>`, `g`), `</div>`);
 
-  buildHtml(packageTemplate, data, outputFile);
+  hbs2html(packageTemplate, data, outputFile);
 };

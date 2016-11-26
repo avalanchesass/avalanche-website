@@ -4,7 +4,7 @@ const htmlclean = require(`htmlclean`);
 const mkdir = require(`mkdirp`);
 const path = require(`path`);
 
-const handlebarsRegisterPartials = require(`./lib/handlebars-register-partials.js`);
+const handlebarsRegisterPartials = require(`./handlebars-register-partials.js`);
 
 const viewsDirectory = path.join(process.cwd(), `resources`, `views`);
 handlebarsRegisterPartials(Handlebars, viewsDirectory);

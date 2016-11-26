@@ -2,7 +2,7 @@ const fs = require(`fs`);
 const glob = require(`glob`);
 const path = require(`path`);
 
-const minifyCss = require(`./_minify-css.js`);
+const minifyCss = require(`./lib/minify-css.js`);
 const version = require(`../package.json`).version;
 
 minifyCss();

@@ -1,8 +1,8 @@
-const buildBaseCss = require(`./_build-base-css.js`);
-const buildBaseHtml = require(`./_build-base-html.js`);
-const buildPackageCss = require(`./_build-package-css.js`);
-const buildPackageHtml = require(`./_build-package-html.js`);
-const getDirectories = require(`./_get-directories.js`);
+const buildBaseCss = require(`./build/base-css.js`);
+const buildBaseHtml = require(`./build/base-html.js`);
+const buildPackageCss = require(`./build/package-css.js`);
+const buildPackageHtml = require(`./build/package-html.js`);
+const getDirectories = require(`./lib/get-directories.js`);
 
 const packages = getDirectories(`avalanche/packages`);
 
