@@ -27,4 +27,5 @@ Thumbs.db
 # Folders to ignore
 avalanche
 dist
+certs
 node_modules
