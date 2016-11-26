@@ -2,7 +2,7 @@
 Website generator for the avalanche framework.
 
 ## Getting started
-- `yarn`
+- `yarn run init`
 - `yarn start`
 
 ## Build

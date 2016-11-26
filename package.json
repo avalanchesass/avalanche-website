@@ -39,9 +39,9 @@
   },
   "scripts": {
     "init": "yarn && http2-server --generate-cert",
-    "start": "npm run build && http2-server dist -o -g -P",
+    "start": "yarn run build && http2-server dist -o -g -P",
     "build": "sh scripts/build.sh",
-    "build-production": "npm run build && npm run minify",
+    "build-production": "yarn run build && yarn run minify",
     "minify": "node scripts/minify.js",
     "lint": "stylelint 'resources/**/*.scss'"
   }
