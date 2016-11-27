@@ -42,6 +42,6 @@
     "start": "yarn run build && http2-server dist -o -g -P",
     "build": "rm -Rf dist && node scripts/build.js",
     "build-production": "rm -Rf dist && node scripts/build.js --minify",
-    "lint": "stylelint 'resources/**/*.scss'"
+    "lint": "stylelint 'resources/**/*.scss' && eslint scripts"
   }
 }
