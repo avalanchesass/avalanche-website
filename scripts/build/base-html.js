@@ -4,14 +4,15 @@ const path = require(`path`);
 
 const hbs2html = require(`../lib/hbs2html.js`);
 
-const pages = glob.sync(path.join(process.cwd(), `pages`, `**`, `*.hbs`));
-
 module.exports = (data) => {
+  const pagesDirectory = path.join(process.cwd(), `resources`, `views`, `pages`);
+  const pages = glob.sync(path.join(pagesDirectory, `**`, `*.hbs`));
+
   pages.forEach((page) => {
     const baseTemplate = fs.readFileSync(page, `utf8`);
     const pathName = path.parse(page).name;
     const subPath = path
-      .parse(page.replace(path.join(process.cwd(), `pages`, path.sep), ``))
+      .parse(page.replace(path.join(pagesDirectory, path.sep), ``))
       .dir.split(path.sep);
     const outputPath = [process.cwd(), `dist`, ...subPath];
 
