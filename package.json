@@ -32,6 +32,8 @@
     "node-sass-magic-importer": "^2.1.3",
     "postcss": "^5.2.5",
     "postcss-scss": "^0.4.0",
+    "sassdoc": "^2.1.20",
+    "sassdoc-theme-flippant": "^0.1.0",
     "static-http2-server": "^1.5.3",
     "stylelint": "^7.6.0",
     "stylelint-config-modularis": "^2.0.1",
@@ -40,8 +42,9 @@
   "scripts": {
     "init": "git clone -b dev https://github.com/avalanchesass/avalanche.git && yarn && http2-server --generate-cert",
     "start": "yarn run build && http2-server dist -o -g -P",
-    "build": "rm -Rf dist && node scripts/build.js",
-    "build-production": "rm -Rf dist && node scripts/build.js --minify",
+    "build": "rm -Rf dist && node scripts/build.js && yarn run doc",
+    "build-production": "rm -Rf dist && node scripts/build.js --minify && yarn run doc",
+    "doc": "cd avalanche && sassdoc packages/**/*.scss --dest ../dist/documentation --theme flippant",
     "lint": "stylelint 'resources/**/*.scss' && eslint scripts"
   }
 }
