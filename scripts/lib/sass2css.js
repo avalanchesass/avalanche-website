@@ -9,7 +9,7 @@ const writeFile = require(`./write-file.js`);
 module.exports = (inputFile, outputFile, options = { cwd: process.cwd() }) => {
   sass.render({
     file: inputFile,
-    importer: magicImporter(options)
+    importer: magicImporter(options),
   }, (error, result) => {
     if (error) throw error;
 

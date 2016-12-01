@@ -11,7 +11,7 @@ marked.setOptions({
       return highlightJs.highlight(language, code).value;
     }
     return highlightJs.highlightAuto(code).value;
-  }
+  },
 });
 
 const packageHbs = path.join(process.cwd(), `resources`, `views`, `package.hbs`);
@@ -24,12 +24,11 @@ module.exports = (packageName, data) => {
 
   // Create live demo code from code example.
   const matchExamples = new RegExp(`\`\`\`html((.|\n)*?)\`\`\``, `g`);
-  data.packageContent = marked(
-    packageContent.replace(
-      matchExamples,
-      `XDIVclass=c-demoX\r\nXDIVclass=c-demo__viewX\r\n$1/XDIVX\r\n\`\`\`html$1\`\`\`\r\n/XDIVX`
-    )
-  )
+  // eslint-disable-next-line no-param-reassign
+  data.packageContent = marked(packageContent.replace(
+    matchExamples,
+    `XDIVclass=c-demoX\r\nXDIVclass=c-demo__viewX\r\n$1/XDIVX\r\n\`\`\`html$1\`\`\`\r\n/XDIVX`
+  ))
   .replace(new RegExp(`<pre>`, `g`), `<pre class="c-highlight">`)
   .replace(new RegExp(`class="hljs-`, `g`), `class="c-highlight__`)
   .replace(new RegExp(`(<p>)?XDIVclass=(.*?)X(</p>)?`, `g`), `<div class="$2">`)

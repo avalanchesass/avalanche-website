@@ -20,7 +20,7 @@
     "autoprefixer": "^6.5.3",
     "clean-css": "^3.4.21",
     "eslint": "^3.10.2",
-    "eslint-config-modularis": "^2.0.0",
+    "eslint-config-modularis": "^4.0.0",
     "eslint-plugin-import": "^2.2.0",
     "glob": "^7.1.1",
     "handlebars": "^4.0.6",
