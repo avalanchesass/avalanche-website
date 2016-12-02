@@ -1,0 +1,11 @@
+.o-spacing-container-m {
+  > * + * {
+    margin-top: spacing(m);
+  }
+}
+
+.o-spacing-container-xxxl {
+  > * + * {
+    margin-top: spacing(xxxl);
+  }
+}
