@@ -34,7 +34,9 @@ module.exports = (packageName, data) => {
   .replace(new RegExp(`(<p>)?XDIVclass=(.*?)X(</p>)?`, `g`), `<div class="$2">`)
   .replace(new RegExp(`/XDIVX`, `g`), `</div>`)
   .replace(new RegExp(`<p><div`, `g`), `<div`)
-  .replace(new RegExp(`</div></p>`, `g`), `</div>`);
+  .replace(new RegExp(`</div></p>`, `g`), `</div>`)
+  // Style links and make them SEO friendly.
+  .replace(new RegExp(`<a`, `g`), `<a class="c-anchor" rel="nofollow"`);
 
   hbs2html(packageTemplate, data, outputFile);
 };
