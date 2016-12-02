@@ -2,9 +2,56 @@
   <div class="u-spacing-container-xxxl">
     {{> partials/header }}
 
-    <section class="o-container c-intro u-spacing-container-m">
-      <h1 class="c-intro__title">Getting started</h1>
-    </section>
+    <main class="o-container u-spacing-container-xxxl">
+      <section class="c-intro">
+        <h1 class="c-intro__title">Getting started</h1>
+      </section>
+      <section class="c-content u-spacing-container-m">
+        <h2 class="c-content__headline">Start from scratch</h2>
+        <p>If you start a new project, you can use the <b>avalanche</b> CLI to setup a new project powered by <b>avalanche</b>.</p>
+        <pre class="c-highlight"><code class="lang-bash"><span class="c-highlight__comment"># Install the avalanche CLI.</span>
+        npm install @avalanche/cli -g
+        <span class="c-highlight__comment"># Create a new project in the directory "your-project".</span>
+        avalanche "your-project-name"
+        <span class="c-highlight__comment"># Switch to the newly created directory.</span>
+        cd your-project-name
+        <span class="c-highlight__comment"># Install dependencies and start the build process.</span>
+        npm start</code></pre>
+        <p>After installing the <b>avalanche</b> CLI and creating a new project you end up with the following directory structure:</p>
+        <pre class="c-highlight">
+        your-project-name/
+        ├── resources/
+        │   └── scss/
+        │       ├── components/
+        │       ├── generic/
+        │       ├── objects/
+        │       ├── settings/
+        │       ├── tools/
+        │       ├── utilities/
+        │       └── index.scss
+        └── package.json
+        </pre>
+        <p>The directory structure is based on the <strong>BEMIT</strong> (BEM + ITCSS) methodology. You can read <a class="c-anchor" href="http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/" rel="nofollow">more about the concept at csswizardry.com</a>.</p>
+        <p>The included build process uses the <a class="c-anchor" href="https://github.com/maoberlehner/node-sass-magic-importer" rel="nofollow">node-sass-magic-importer</a>, a node-sass custom importer. Among other things this makes it possible to use <a class="c-anchor" href="https://github.com/maoberlehner/node-sass-magic-importer#globbing" rel="nofollow">globbing</a> inside your sass files. Every file you create inside the default directory structure will be imported by the <code>index.scss</code> file automatically.</p>
+      </section>
+
+      <section class="c-content u-spacing-container-m">
+        <h2 class="c-content__headline">Integrate <b>avalanche</b> packages into an existing project</h2>
+        <p>If you want to use <b>avalanche</b> packages in your existing project you need to install the <a class="c-anchor" href="https://github.com/maoberlehner/node-sass-magic-importer" rel="nofollow">node-sass-magic-importer</a> npm package:</p>
+        <pre class="c-highlight"><code class="lang-bash"><span class="c-highlight__comment"># Install the node-sass-magic-importer module.</span>
+        npm install node-sass-magic-importer --save-dev</code></pre>
+        <p>To integrate the <code>node-sass-magic-importer</code> custom importer module into your build process, follow the steps in the <a class="c-anchor" href="https://github.com/maoberlehner/node-sass-magic-importer#usage" rel="nofollow">modules usage guide</a>.</p>
+      </section>
+
+      <section class="c-content u-spacing-container-m">
+        <h2 class="c-content__headline">Installing packages</h2>
+        <p>Install <b>avalanche</b> packages like regular npm modules:</p>
+        <pre class="c-highlight"><code class="lang-bash">npm install @avalanche/object-grid --save-dev</code></pre>
+        <p>To use a <b>avalanche</b> package in your project, import it in your sass code:</p>
+        <pre class="c-highlight"><code class="lang-scss"><span class="c-highlight__comment">// Import the packages main file.</span>
+        @<span class="c-highlight__keyword">import</span> <span class="c-highlight__string">'~@avalanche/object-grid'</span>;</code></pre>
+      </section>
+    </main>
 
     {{> partials/footer }}
   </div>
