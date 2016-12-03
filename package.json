@@ -16,7 +16,7 @@
     "url": "https://github.com/avalanchesass/avalanche-website/issues"
   },
   "devDependencies": {
-    "@avalanche/object-grid": "^4.0.0-alpha.3",
+    "@avalanche/object-grid": "^4.0.0-alpha.4",
     "autoprefixer": "^6.5.3",
     "clean-css": "^3.4.21",
     "eslint": "^3.10.2",
