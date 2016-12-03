@@ -4,7 +4,9 @@ const buildPackageCss = require(`./build/package-css.js`);
 const buildPackageHtml = require(`./build/package-html.js`);
 const getDirectories = require(`./lib/get-directories.js`);
 
-const packages = getDirectories(`avalanche/packages`);
+const excludedPackages = [`cli`];
+const packages = getDirectories(`avalanche/packages`)
+  .filter(packageName => !excludedPackages.includes(packageName));
 
 const defaultData = {
   css: `<link rel="stylesheet" href="/base/css/global.css">`,
