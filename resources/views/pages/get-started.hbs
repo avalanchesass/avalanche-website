@@ -20,6 +20,8 @@
         <p>After installing the <b>avalanche</b> CLI and creating a new project you end up with the following directory structure:</p>
         <pre class="c-highlight">
         your-project-name/
+        ├── app/
+        |   └── index.html
         ├── scss/
         │   ├── components/
         │   ├── generic/
@@ -28,10 +30,12 @@
         │   ├── tools/
         │   ├── utilities/
         │   └── index.scss
+        ├── .gitignore
+        ├── gulpfile.js
         └── package.json
         </pre>
         <p>The directory structure is based on the <strong>BEMIT</strong> (BEM + ITCSS) methodology. You can read <a class="c-anchor" href="http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/" rel="nofollow">more about the concept at csswizardry.com</a>.</p>
-        <p>The included build process uses the <a class="c-anchor" href="https://github.com/maoberlehner/node-sass-magic-importer" rel="nofollow">node-sass-magic-importer</a>, a node-sass custom importer. Among other things this makes it possible to use <a class="c-anchor" href="https://github.com/maoberlehner/node-sass-magic-importer#globbing" rel="nofollow">globbing</a> inside your sass files. Every file you create inside the default directory structure will be imported by the <code>index.scss</code> file automatically.</p>
+        <p>The included Gulp build process uses the <a class="c-anchor" href="https://github.com/maoberlehner/node-sass-magic-importer" rel="nofollow">node-sass-magic-importer</a>, a node-sass custom importer. Among other things this makes it possible to use <a class="c-anchor" href="https://github.com/maoberlehner/node-sass-magic-importer#globbing" rel="nofollow">globbing</a> inside your sass files. Every file you create inside the default directory structure will be imported by the <code>index.scss</code> file automatically.</p>
       </section>
 
       <section class="o-spacing-container-m c-content">
