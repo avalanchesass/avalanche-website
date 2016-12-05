@@ -38,5 +38,8 @@ module.exports = (packageName, data) => {
   // Style links and make them SEO friendly.
   .replace(new RegExp(`<a`, `g`), `<a class="c-anchor" rel="nofollow"`);
 
+  // eslint-disable-next-line no-param-reassign
+  data.metaDescription = data.packageContent.match(/<p>(.*?)<\/p>/)[1];
+
   hbs2html(packageTemplate, data, outputFile);
 };

@@ -18,6 +18,7 @@ buildBaseCss();
 packages.forEach((packageName) => {
   const packageData = JSON.parse(JSON.stringify(defaultData));
   packageData.title = packageName;
+  packageData.metaTitle = `${packageName} package | avalanche`;
 
   packageData.css = [
     `<link rel="stylesheet" href="/base/css/global.css">`,
