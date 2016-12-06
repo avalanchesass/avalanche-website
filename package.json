@@ -45,6 +45,7 @@
     "build": "rm -Rf dist && node scripts/build.js && yarn run doc && cp resources/images/favicon.ico dist",
     "build-production": "rm -Rf dist && node scripts/build.js --minify && yarn run doc",
     "doc": "cd avalanche && sassdoc packages/*/scss/*.scss --dest ../dist/documentation --theme flippant",
-    "lint": "stylelint 'resources/**/*.scss' && eslint scripts"
+    "lint": "stylelint 'resources/**/*.scss' && eslint scripts",
+    "publish": "yarn run build-production && rsync -avze ssh dist/* vs1.oberlehner.net:/var/www/avalanche.oberlehner.net/web/alpha"
   }
 }
