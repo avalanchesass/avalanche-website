@@ -21,8 +21,8 @@ packages.forEach((packageName) => {
   packageData.metaTitle = `${packageName} package | avalanche`;
 
   packageData.css = [
-    `<link rel="stylesheet" href="/base/css/global.css">`,
     `<link rel="stylesheet" href="/packages/${packageName}/css/index.css">`,
+    `<link rel="stylesheet" href="/base/css/global.css">`,
   ].join(`\n`);
 
   buildPackageHtml(packageName, packageData);

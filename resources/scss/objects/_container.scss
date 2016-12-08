@@ -1,7 +1,3 @@
-.o-container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: spacing(m, rem);
-  padding-left: spacing(m, rem);
-  max-width: 50rem;
-}
+$o-container-size-default: 50rem;
+
+@import '{ /^\.o-container(.*)/ as .o-container-alt$1 } from ~@avalanche/object-container';
