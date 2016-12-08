@@ -1,3 +1,3 @@
 $o-grid-vertical-gutter: (xxl, xxxl);
 
-@import '{ /^\.o-grid(.*)/ as .o-grid-alt$1 } from ~@avalanche/object-grid';
+@import '{ /(.*?)\.o-grid(.*?)/ as $1.o-grid-alt$2 } from ~@avalanche/object-grid';
