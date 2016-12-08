@@ -1,5 +1,6 @@
 const buildBaseCss = require(`./build/base-css.js`);
 const buildBaseHtml = require(`./build/base-html.js`);
+const buildExampleCss = require(`./build/example-css.js`);
 const buildPackageCss = require(`./build/package-css.js`);
 const buildPackageHtml = require(`./build/package-html.js`);
 const getDirectories = require(`./lib/get-directories.js`);
@@ -27,4 +28,10 @@ packages.forEach((packageName) => {
 
   buildPackageHtml(packageName, packageData);
   buildPackageCss(packageName);
+});
+
+const examples = getDirectories(`examples`);
+
+examples.forEach((exampleName) => {
+  buildExampleCss(exampleName);
 });
