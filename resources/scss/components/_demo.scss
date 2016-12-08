@@ -15,12 +15,4 @@
   .o-grid__item {
     width: 50%;
   }
-
-  h3 {
-    margin-bottom: spacing(xs);
-  }
-
-  h3:not(:first-child) {
-    margin-top: spacing(l);
-  }
 }
