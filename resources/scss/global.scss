@@ -24,8 +24,15 @@
  * - No cosmetics.
  * - Agnostically named classes only (e.g. .o-uilist {}).
  */
-@import '{ /^\.o-container(.*)/ as .o-container-alt$1 } from ~@avalanche/object-container';
-@import '{ /(.*?)\.o-grid(.*?)/ as $1.o-grid-alt$2 } from ~@avalanche/object-grid';
+@import '{ .o-container as .o-container-alt } from ~@avalanche/object-container';
+@import '{
+  .o-grid as .o-grid-alt,
+  .o-grid__item as .o-grid-alt__item,
+  .o-grid--xxl-vertical as .o-grid-alt--xxl-vertical,
+  .o-grid--xxl-vertical > .o-grid__item as .o-grid-alt--xxl-vertical > .o-grid-alt__item,
+  .o-grid--xxxl-vertical as .o-grid-alt--xxxl-vertical,
+  .o-grid--xxxl-vertical > .o-grid__item as .o-grid-alt--xxxl-vertical > .o-grid-alt__item
+} from ~@avalanche/object-grid';
 @import 'objects/**/*';
 
 /**
@@ -44,4 +51,5 @@
  * - Only affect one piece of the DOM at a time.
  * - Usually carry !important.
  */
+@import '{ .u-width-12\\/12, .u-width-4\\/12\\@m } from ~@avalanche/utility-width';
 @import 'utilities/**/*';
