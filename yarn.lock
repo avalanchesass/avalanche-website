@@ -689,9 +689,9 @@ css-select@~1.2.0:
     domutils "1.5.1"
     nth-check "~1.0.1"
 
-css-selector-extract@^1.3.1:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/css-selector-extract/-/css-selector-extract-1.3.2.tgz#978c89f3c324b119297d6a86efeb6e131c97d4ba"
+css-selector-extract@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/css-selector-extract/-/css-selector-extract-2.0.1.tgz#f3c2646f424fb617e0dc2fce042da38163a7befa"
   dependencies:
     postcss "^5.2.6"
   optionalDependencies:
@@ -2708,13 +2708,13 @@ node-sass-glob-importer@^3.0.0:
     glob "^7.1.1"
     unique-concat "^0.2.2"
 
-node-sass-magic-importer@^2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/node-sass-magic-importer/-/node-sass-magic-importer-2.1.4.tgz#7bc51c6c40b490cec6568157c5c1ed0764c21260"
+node-sass-magic-importer@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/node-sass-magic-importer/-/node-sass-magic-importer-3.0.0.tgz#d4e314a613f70a31c5ff03ecb4e7d9f72de0e6f3"
   dependencies:
     node-sass-glob-importer "^3.0.0"
     node-sass-package-importer "^3.0.0"
-    node-sass-selector-importer "^3.1.0"
+    node-sass-selector-importer "^4.0.0"
     unique-concat "^0.2.2"
 
 node-sass-package-importer@^3.0.0:
@@ -2723,11 +2723,11 @@ node-sass-package-importer@^3.0.0:
   dependencies:
     resolve "^1.1.7"
 
-node-sass-selector-importer@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/node-sass-selector-importer/-/node-sass-selector-importer-3.1.0.tgz#ccedddb8228c6df8bb3492736b6b3fe3aa5194e4"
+node-sass-selector-importer@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/node-sass-selector-importer/-/node-sass-selector-importer-4.0.0.tgz#4ec5e6b87b04e1d4c28f1c8fd1a249e7a4b7ca59"
   dependencies:
-    css-selector-extract "^1.3.1"
+    css-selector-extract "^2.0.1"
     node-sass "^3.13.0"
     postcss-scss "^0.3.1"
 
