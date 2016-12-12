@@ -15,4 +15,15 @@
   .o-grid__item {
     width: 50%;
   }
+
+  .o-aspect-ratio + .o-aspect-ratio {
+    margin-top: spacing(m);
+  }
+
+  .o-aspect-ratio__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: color(b, gray);
+  }
 }
