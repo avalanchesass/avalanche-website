@@ -5,6 +5,6 @@ module.exports = {
   rules: {
     'declaration-block-properties-order': declarationBlockPropertiesOrder,
     'no-indistinguishable-colors': [true, { threshold: 1 }],
-    'string-no-newline' false,
+    'string-no-newline': false,
   },
 };
