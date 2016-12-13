@@ -46,7 +46,7 @@
     "init": "git clone -b dev https://github.com/avalanchesass/avalanche.git && yarn && http2-server --generate-cert",
     "start": "yarn run build && http2-server dist -o -g -P",
     "build": "rm -Rf dist && node scripts/build.js && yarn run doc && cp resources/images/favicon.ico dist",
-    "build-production": "rm -Rf dist && node scripts/build.js --minify && yarn run doc",
+    "build:production": "rm -Rf dist && node scripts/build.js --minify && yarn run doc",
     "doc": "cd avalanche && sassdoc packages/*/scss/*.scss --dest ../dist/documentation --theme flippant",
     "lint": "stylelint 'resources/**/*.scss' && eslint scripts",
     "lighthouse": "lighthouse https://127.0.0.1:4443/",
