@@ -27,7 +27,7 @@
 @import '{ .o-container as .o-container-alt } from ~@avalanche/object-container';
 @import '{
   .o-grid as .o-grid-alt,
-  .o-grid__item as .o-grid-alt__item,
+  > .o-grid__item as > .o-grid-alt__item,
   .o-grid--xxl-vertical as .o-grid-alt--xxl-vertical,
   .o-grid--xxxl-vertical as .o-grid-alt--xxxl-vertical,
 } from ~@avalanche/object-grid';
