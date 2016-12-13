@@ -7,7 +7,7 @@ Website generator for the avalanche framework.
 
 ## Build
 - `yarn run build` (development)
-- `yarn run build-production` (production)
+- `yarn run build:production` (production)
 
 ## Lint
 - `yarn run lint`
