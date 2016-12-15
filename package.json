@@ -49,7 +49,7 @@
     "build:production": "yarn run clean && node scripts/build.js --minify && yarn run doc && cp resources/images/favicon.ico dist",
     "clean": "rm -Rf dist",
     "doc": "cd avalanche && sassdoc packages/*/scss/*.scss --dest ../dist/documentation --theme flippant",
-    "lint": "stylelint 'resources/**/*.scss' && eslint scripts",
+    "lint": "stylelint '+(examples|resources)/**/*.scss' && eslint scripts",
     "lighthouse": "lighthouse https://127.0.0.1:4443/",
     "publish": "yarn run build:production && rsync -avze ssh dist/* vs1.oberlehner.net:/var/www/avalanche.oberlehner.net/web/alpha"
   }
