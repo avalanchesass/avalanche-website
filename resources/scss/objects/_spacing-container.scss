@@ -1,3 +1,9 @@
+.o-spacing-container-m {
+  > * + * {
+    margin-top: spacing(m);
+  }
+}
+
 .o-spacing-container-l {
   > * + * {
     margin-top: spacing(l);
