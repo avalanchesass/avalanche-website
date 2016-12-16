@@ -18,7 +18,7 @@ module.exports = (template, data, outputFile) => {
   if (minify) {
     uncss(html, { htmlroot: `dist` }, (error, output) => {
       const minifiedCss = new CleanCss({
-        semanticMerging: true
+        semanticMerging: true,
       }).minify(output).styles;
       // eslint-disable-next-line no-param-reassign
       data.css = `<style>${minifiedCss}</style>`;
