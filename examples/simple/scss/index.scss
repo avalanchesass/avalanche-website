@@ -1,3 +1,3 @@
-@import '~@avalanche/object-container';
-@import '~@avalanche/object-grid';
-@import '~@avalanche/object-island';
+@import '{ .o-container } from ~@avalanche/object-container';
+@import '{ .o-grid } from ~@avalanche/object-grid';
+@import '{ .o-island } from ~@avalanche/object-island';
