@@ -1,14 +1,14 @@
 .c-demo__view {
-  padding: spacing(l);
-  border: (spacing(s) / 2) solid color(a, gray);
+  padding: setting-spacing(l);
+  border: (setting-spacing(s) / 2) solid setting-color(a, gray);
   border-bottom: none;
 }
 
 .c-demo {
   .o-grid__item > div,
   [class*='u-width-'] {
-    padding: spacing(m);
-    background: color(b, gray);
+    padding: setting-spacing(m);
+    background: setting-color(b, gray);
     text-align: center;
   }
 
@@ -17,13 +17,13 @@
   }
 
   .o-aspect-ratio + .o-aspect-ratio {
-    margin-top: spacing(m);
+    margin-top: setting-spacing(m);
   }
 
   .o-aspect-ratio__inner {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: color(b, gray);
+    background: setting-color(b, gray);
   }
 }

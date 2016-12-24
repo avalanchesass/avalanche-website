@@ -27,7 +27,7 @@ $colors-gray: (
   c: #9e9e9e,
 );
 
-@function color($color, $type: default) {
+@function setting-color($color, $type: default) {
   @if $type == contrast {
     @return map-get($colors-contrast, $color);
   }
@@ -63,7 +63,7 @@ $breakpoints: (
   xl: 75em,
 );
 
-@function breakpoint($size, $rem: false) {
+@function setting-breakpoint($size, $rem: false) {
   $breakpoint: map-get($breakpoints, $size);
   @if $rem { $breakpoint: ($breakpoint / 1em) * 1rem; }
   @return $breakpoint;
@@ -79,7 +79,7 @@ $spacings: (
   xxxl: 6em,
 );
 
-@function spacing($size, $rem: false) {
+@function setting-spacing($size, $rem: false) {
   $spacing: map-get($spacings, $size);
   @if $rem { $spacing: ($spacing / 1em) * 1rem; }
   @return $spacing;

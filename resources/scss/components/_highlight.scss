@@ -1,14 +1,14 @@
 .c-highlight {
   display: block;
   overflow-x: auto;
-  padding: spacing(l);
-  background: color(a, gray);
+  padding: setting-spacing(l);
+  background: setting-color(a, gray);
   color: #333;
 }
 
 .c-highlight__comment,
 .c-highlight__quote {
-  color: color(c, gray);
+  color: setting-color(c, gray);
   font-style: italic;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .c-highlight__meta {
-  color: color(a, gray);
+  color: setting-color(a, gray);
   font-weight: 700;
 }
 

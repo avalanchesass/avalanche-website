@@ -1,5 +1,5 @@
-$brand-color: color(a);
-$brand-color-contrast: color(a, 'contrast');
+$brand-color: setting-color(a);
+$brand-color-contrast: setting-color(a, 'contrast');
 
 /**
  * Package settings.

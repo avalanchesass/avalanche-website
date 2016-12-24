@@ -1,6 +1,6 @@
 .c-hero {
-  padding-top: spacing(xxxl);
-  padding-bottom: spacing(xxxl);
+  padding-top: setting-spacing(xxxl);
+  padding-bottom: setting-spacing(xxxl);
   background: $brand-color;
   color: $brand-color-contrast;
   text-align: center;
@@ -12,11 +12,11 @@
 }
 
 .c-hero__cta {
-  margin-top: spacing(xl);
+  margin-top: setting-spacing(xl);
 }
 
 .c-hero__secondary {
   display: inline-block;
-  margin-top: spacing(m);
+  margin-top: setting-spacing(m);
   color: $brand-color-contrast;
 }
