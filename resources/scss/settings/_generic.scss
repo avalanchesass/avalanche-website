@@ -56,19 +56,6 @@ $font-sizes: (
   @return $font-size;
 }
 
-$breakpoints: (
-  s: 30em,
-  m: 45em,
-  l: 60em,
-  xl: 75em,
-);
-
-@function setting-breakpoint($size, $rem: false) {
-  $breakpoint: map-get($breakpoints, $size);
-  @if $rem { $breakpoint: ($breakpoint / 1em) * 1rem; }
-  @return $breakpoint;
-}
-
 $spacings: (
   xs: 0.5em,
   s: 0.75em,
