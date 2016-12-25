@@ -55,19 +55,3 @@ $font-sizes: (
   @if $rem { $font-size: ($font-size / 1em) * 1rem; }
   @return $font-size;
 }
-
-$spacings: (
-  xs: 0.5em,
-  s: 0.75em,
-  m: 1em,
-  l: 1.5em,
-  xl: 2em,
-  xxl: 3.5em,
-  xxxl: 6em,
-);
-
-@function setting-spacing($size, $rem: false) {
-  $spacing: map-get($spacings, $size);
-  @if $rem { $spacing: ($spacing / 1em) * 1rem; }
-  @return $spacing;
-}

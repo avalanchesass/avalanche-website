@@ -24,7 +24,7 @@
   version "4.0.0-alpha.1"
   resolved "https://registry.yarnpkg.com/@avalanche/setting-breakpoints/-/setting-breakpoints-4.0.0-alpha.1.tgz#ef0b70adb1469468578b7178dc75a85588f4dbc1"
 
-"@avalanche/setting-spacings@^4.0.0-alpha.2":
+"@avalanche/setting-spacings@^4.0.0-alpha.1", "@avalanche/setting-spacings@^4.0.0-alpha.2":
   version "4.0.0-alpha.2"
   resolved "https://registry.yarnpkg.com/@avalanche/setting-spacings/-/setting-spacings-4.0.0-alpha.2.tgz#796cb45f174107fb272c09d120aac103ede4a0eb"
 
