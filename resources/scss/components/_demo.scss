@@ -6,14 +6,13 @@
 
 .c-demo {
   .o-grid__item > div,
-  [class*='u-width-'] {
+  [class*='u-width-'],
+  [class*='u-offset-'],
+  [class*='u-order-'],
+  [class*='u-spacing-'] {
     padding: setting-spacing(m);
     background: setting-color(b, gray);
     text-align: center;
-  }
-
-  .o-grid__item {
-    width: 50%;
   }
 
   .o-aspect-ratio + .o-aspect-ratio {
@@ -24,6 +23,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: setting-color(b, gray);
+  }
+
+  .o-grid__item {
+    width: 50%;
+  }
+
+  .o-container,
+  .o-island {
     background: setting-color(b, gray);
   }
 }
