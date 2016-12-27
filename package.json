@@ -35,6 +35,7 @@
     "mkdirp": "^0.5.1",
     "node-sass": "^4.0.0",
     "node-sass-magic-importer": "^3.0.0",
+    "normalize-scss": "^6.0.0",
     "postcss": "^5.2.6",
     "postcss-scss": "^0.4.0",
     "reset-css": "^2.2.0",
