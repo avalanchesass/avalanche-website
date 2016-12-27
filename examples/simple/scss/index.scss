@@ -1,7 +1,145 @@
+@import '~@avalanche/setting-breakpoints';
+@import '~@avalanche/setting-spacings';
+
 @import '~normalize-scss/sass/normalize/_import-now.scss';
 @import '~reset-css/_reset.scss';
 
+html {
+  color: #444;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
 @import '{ .o-container } from ~@avalanche/object-container';
+@import '{
+  .o-vertical-spacing,
+  .o-vertical-spacing--s,
+  .o-vertical-spacing--xxl
+} from ~@avalanche/object-vertical-spacing';
 @import '{ .o-grid } from ~@avalanche/object-grid';
 @import '{ .o-island } from ~@avalanche/object-island';
+
+.o-list-inline {
+  list-style-type: inline;
+}
+
+.o-list-inline__item {
+  display: inline-block;
+}
+
+.c-main-header {
+  padding-top: setting-spacing(m);
+  padding-bottom: setting-spacing(m);
+  background: #efefef;
+
+  &,
+  a {
+    color: #444;
+  }
+}
+
+.c-main-header__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25em;
+
+  @media (min-width: setting-breakpoint(m)) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.c-main-header__logo {
+  margin-bottom: setting-spacing(m);
+  text-decoration: none;
+
+  @media (min-width: setting-breakpoint(m)) {
+    margin-bottom: 0;
+  }
+}
+
+.c-nav__item {
+  &:not(:first-child) {
+    margin-left: setting-spacing(m);
+
+    @media (min-width: setting-breakpoint(m)) {
+      margin-left: setting-spacing(l);
+    }
+  }
+}
+
+.c-nav__link {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.c-intro {
+  font-size: 1.25em;
+  line-height: 1.4;
+}
+
+.c-intro__title {
+  font-size: 2.25em;
+}
+
+.c-intro__cta-link {
+  &,
+  &:visited {
+    color: #2196f3;
+  }
+
+  &:not(:first-child) {
+    margin-left: setting-spacing(s);
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.c-teaser__item {
+  border: 1px solid #efefef;
+}
+
+.c-teaser {
+  line-height: 1.4;
+}
+
+.c-teaser__image {
+  width: 100%;
+  height: auto;
+}
+
+.c-teaser__title {
+  font-size: 1.85em;
+}
+
+.c-teaser__cta-link {
+  display: inline-block;
+
+  &,
+  &:visited {
+    color: #2196f3;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.c-main-footer {
+  padding-top: setting-spacing(m);
+  padding-bottom: setting-spacing(m);
+  background: #efefef;
+  font-size: 0.85em;
+}
+
 @import '{ .u-width-12/12, .u-width-4/12@m } from ~@avalanche/utility-width';
+@import '{ .u-text-align-center } from ~@avalanche/utility-text-align';

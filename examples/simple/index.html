@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="dist/index.css">
   </head>
-  <body>
+  <body class="o-vertical-spacing o-vertical-spacing--xxl">
     <header class="c-main-header">
       <div class="o-container">
         <div class="c-main-header__inner">
-          <a class="c-main-logo" href="#">LOGO</a>
+          <a class="c-main-header__logo" href="#">LOGO</a>
           <nav class="c-nav">
             <ul class="o-list-inline c-nav__list">
               <li class="o-list-inline__item c-nav__item"><a class="c-nav__link" href="#">Foo</a></li>
@@ -24,8 +24,13 @@
     </header>
 
     <main class="o-container">
-      <section class="c-intro">
+      <section class="o-vertical-spacing o-vertical-spacing--s c-intro">
         <h1 class="c-intro__title">Simple template</h1>
+        <p class="c-intro__text">This is a very simple example template using <b>avalanche</b> packages for the layout. The avalanche framework provides only very basic packages with very little styling out of the box.</p>
+        <div class="c-intro__cta">
+          <a class="c-intro__cta-link" href="https://github.com/avalanchesass/avalanche-website/tree/dev/examples/simple" rel="nofollow">View the source code &raquo;</a>
+          <a class="c-intro__cta-link" href="/get-started/">Learn more &raquo;</a>
+        </div>
       </section>
     </main>
 
@@ -33,17 +38,37 @@
       <div class="o-grid">
         <div class="o-grid__item u-width-12/12 u-width-4/12@m">
           <div class="c-teaser__item">
-            IMG
-            <div class="o-island o-spacing-container o-spacing-container--m"><!-- Modifier class?! -->
-              <h2 class="c-teaser__title"></h2>
-              <p></p>
-              <a clas="c-teaser__cta" href="#">Buy now!</a>
+            <img class="c-teaser__image" src="http://placehold.it/328x180" alt="Placeholder">
+            <div class="o-island o-vertical-spacing">
+              <h2 class="c-teaser__title">Lorem Ipsum</h2>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+              <a class="c-teaser__cta-link" href="#">Dolor at vero...</a>
+            </div>
+          </div>
+        </div>
+        <div class="o-grid__item u-width-12/12 u-width-4/12@m">
+          <div class="c-teaser__item">
+            <img class="c-teaser__image" src="http://placehold.it/328x180" alt="Placeholder">
+            <div class="o-island o-vertical-spacing">
+              <h2 class="c-teaser__title">Lorem Ipsum</h2>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+              <a class="c-teaser__cta-link" href="#">Dolor at vero...</a>
+            </div>
+          </div>
+        </div>
+        <div class="o-grid__item u-width-12/12 u-width-4/12@m">
+          <div class="c-teaser__item">
+            <img class="c-teaser__image" src="http://placehold.it/328x180" alt="Placeholder">
+            <div class="o-island o-vertical-spacing">
+              <h2 class="c-teaser__title">Lorem Ipsum</h2>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+              <a class="c-teaser__cta-link" href="#">Dolor at vero...</a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <footer class="u-text-align-center">&copy; Company</footer>
+    <footer class="c-main-footer u-text-align-center">&copy; Company</footer>
   </body>
 </html>
