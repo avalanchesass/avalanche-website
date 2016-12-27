@@ -16,6 +16,7 @@
  * - Resets, Normalize.css, etc.
  */
 @import '~normalize-scss/sass/normalize/_import-now.scss';
+@import '~@avalanche/generic-box-sizing-reset';
 @import 'generic/**/*';
 
 /**
