@@ -5,7 +5,7 @@ const buildPackageCss = require(`./build/package-css.js`);
 const buildPackageHtml = require(`./build/package-html.js`);
 const getDirectories = require(`./lib/get-directories.js`);
 
-const excludedPackages = [`cli`, `utility-order`, `utility-spacing`, `utility-text-align`, `utility-visibility`];
+const excludedPackages = [`cli`];
 const packages = getDirectories(`avalanche/packages`)
   .filter(packageName => !excludedPackages.includes(packageName));
 
