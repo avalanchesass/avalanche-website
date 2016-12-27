@@ -7,5 +7,5 @@ module.exports = (exampleName) => {
   const inputFile = path.join(examplePath, `scss`, `index.scss`);
   const outputFile = path.join(examplePath, `dist`, `index.css`);
 
-  sass2css(inputFile, outputFile);
+  sass2css(inputFile, outputFile, { cwd: process.cwd() }, true);
 };
