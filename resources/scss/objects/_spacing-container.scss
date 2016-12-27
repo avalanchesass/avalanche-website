@@ -1,3 +1,15 @@
+.o-spacing-container {
+  > * + * {
+    margin-top: setting-spacing(m);
+  }
+}
+
+.o-spacing-container--xs {
+  > * + * {
+    margin-top: setting-spacing(xs);
+  }
+}
+
 .o-spacing-container--m {
   > * + * {
     margin-top: setting-spacing(m);

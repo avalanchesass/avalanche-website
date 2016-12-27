@@ -1,0 +1,16 @@
+.c-preview-grid__link {
+  display: block;
+  color: #444;
+  text-decoration: none;
+}
+
+.c-preview-grid__image {
+  padding: setting-spacing(xs);
+  border: 1px solid setting-color(b, gray);
+  transition: border-color 0.2s;
+
+  &:hover,
+  &:focus {
+    border-color: $brand-color;
+  }
+}
