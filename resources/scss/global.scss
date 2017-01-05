@@ -34,7 +34,13 @@
   .o-grid--xxxl-vertical as .o-grid-alt--xxxl-vertical,
   > .o-grid__item as > .o-grid-alt__item
 } from ~@avalanche/object-grid';
-@import 'objects/**/*';
+@import '{
+  .o-vertical-spacing as .o-vertical-spacing-alt,
+  .o-vertical-spacing--xs as .o-vertical-spacing-alt--xs,
+  .o-vertical-spacing--m as .o-vertical-spacing-alt--m,
+  .o-vertical-spacing--l as .o-vertical-spacing-alt--l,
+  .o-vertical-spacing--xxxl as .o-vertical-spacing-alt--xxxl,
+} from ~@avalanche/object-vertical-spacing';
 
 /**
  * Components
