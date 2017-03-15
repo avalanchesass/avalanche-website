@@ -12,6 +12,11 @@
   <body>
     {{> @partial-block }}
     <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js');
+      }
+    </script>
+    <script>
         window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
         ga('create','UA-57407594-2','auto');ga('send','pageview')
     </script>

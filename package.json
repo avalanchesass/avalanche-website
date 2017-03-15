@@ -48,13 +48,14 @@
     "static-http2-server": "^1.5.3",
     "stylelint": "^7.6.0",
     "stylelint-config-modularis": "^2.0.1",
+    "sw-precache": "^5.1.0",
     "uncss": "^0.14.1"
   },
   "scripts": {
     "init": "git clone -b dev https://github.com/avalanchesass/avalanche.git && yarn && http2-server --generate-cert",
     "start": "yarn run build && http2-server dist -o -g -P",
-    "build": "yarn run clean && node scripts/build.js && yarn run doc && cp -R resources/images dist && mv dist/images/favicon.ico dist && yarn run copy-examples",
-    "build:production": "yarn run clean && node scripts/build.js --minify && yarn run doc && cp -R resources/images dist && mv dist/images/favicon.ico dist && yarn run copy-examples",
+    "build": "yarn run clean && node scripts/build.js && yarn run doc && cp -R resources/images dist && mv dist/images/favicon.ico dist && yarn run copy-examples && sw-precache --root=dist",
+    "build:production": "yarn run clean && node scripts/build.js --minify && yarn run doc && cp -R resources/images dist && mv dist/images/favicon.ico dist && yarn run copy-examples && sw-precache --root=dist",
     "copy-examples": "cp -R examples/* dist/examples && rm -Rf dist/examples/*/scss",
     "doc": "cd avalanche && sassdoc packages/*/scss/*.scss --dest ../dist/documentation --theme flippant",
     "clean": "rm -Rf dist",
