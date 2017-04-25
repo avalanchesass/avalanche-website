@@ -19,7 +19,7 @@ module.exports = (inputFile, outputFile, options = { cwd: process.cwd() }, clean
 
     if (clean) {
       css = new CleanCss({
-        semanticMerging: true,
+        level: 2,
       }).minify(css).styles;
     }
 
