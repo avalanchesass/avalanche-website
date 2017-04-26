@@ -18,7 +18,8 @@
     </script>
     <script>
         window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-        ga('create','UA-57407594-2','auto');ga('send','pageview')
+        ga('create','UA-57407594-2','auto');ga('send','pageview');
+        [].slice.call(document.querySelectorAll('[data-event-category]')).forEach(function(e){e.addEventListener('click',function(){ga('send','event',e.getAttribute('data-event-category'),e.getAttribute('data-event-action'),e.getAttribute('data-event-label'),e.getAttribute('data-event-value'))})});
     </script>
     <script src="https://www.google-analytics.com/analytics.js" defer></script>
   </body>
