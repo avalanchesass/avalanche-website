@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@avalanche/component-button@^4.0.0-alpha.1":
+  version "4.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@avalanche/component-button/-/component-button-4.0.0-alpha.1.tgz#dadf5fe0554341b821c3b88beccc7ba1b6532ad7"
+  dependencies:
+    "@avalanche/setting-colors" "^4.0.0-alpha.1"
+    "@avalanche/setting-spacings" "^4.0.0-alpha.3"
+
 "@avalanche/generic-box-sizing-reset@^4.0.0-alpha.2":
   version "4.0.0-alpha.2"
   resolved "https://registry.yarnpkg.com/@avalanche/generic-box-sizing-reset/-/generic-box-sizing-reset-4.0.0-alpha.2.tgz#2da2c98718d5ef1554cb1e2711bf7c814a8d6d47"
@@ -33,6 +40,10 @@
 "@avalanche/setting-breakpoints@^4.0.0-alpha.2":
   version "4.0.0-alpha.2"
   resolved "https://registry.yarnpkg.com/@avalanche/setting-breakpoints/-/setting-breakpoints-4.0.0-alpha.2.tgz#4dd3e235273a50f04c624f34adde4d0986975d58"
+
+"@avalanche/setting-colors@^4.0.0-alpha.1":
+  version "4.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@avalanche/setting-colors/-/setting-colors-4.0.0-alpha.1.tgz#58a20585f2dfbd759f7e831b2c738e9947a3fcab"
 
 "@avalanche/setting-spacings@^4.0.0-alpha.1", "@avalanche/setting-spacings@^4.0.0-alpha.3":
   version "4.0.0-alpha.3"

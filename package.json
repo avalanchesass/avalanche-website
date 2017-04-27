@@ -16,6 +16,7 @@
     "url": "https://github.com/avalanchesass/avalanche-website/issues"
   },
   "devDependencies": {
+    "@avalanche/component-button": "^4.0.0-alpha.1",
     "@avalanche/generic-box-sizing-reset": "^4.0.0-alpha.2",
     "@avalanche/object-container": "^4.0.0-alpha.3",
     "@avalanche/object-grid": "^4.0.0-alpha.7",

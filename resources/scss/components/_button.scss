@@ -1,32 +1,9 @@
-.c-button {
-  $border-width: (setting-spacing(xs) / 2);
-
-  display: inline-block;
-  padding: (setting-spacing(xs) - $border-width) (setting-spacing(m) - $border-width);
-  border: $border-width solid setting-color(b);
-  background: setting-color(b);
-  color: setting-color(b, contrast);
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
-
-  &:hover,
-  &:focus {
-    background: lighten(setting-color(b), 5%);
-  }
-}
+@import '{ .c-button } from ~@avalanche/component-button';
 
 .c-button--inverted {
-  border-color: setting-color(a, contrast);
-  background: setting-color(a, contrast);
-  color: setting-color(a);
-
-  &:hover,
-  &:focus {
-    background: transparent;
-    color: setting-color(a, contrast);
-  }
+  @include c-button-color(setting-color(a, contrast), setting-color(a));
 }
 
-.c-button--l {
+.c-button--font-size-l {
   font-size: font-size(l);
 }
