@@ -1,7 +1,19 @@
 @import '{ .c-button as .c-button-alt } from ~@avalanche/component-button';
 
 .c-button-alt--inverted {
+  $border-width: (setting-spacing(xs) / 2);
+
   @include c-button-color(setting-color(a, contrast), setting-color(a));
+
+  border: $border-width solid setting-color(a, contrast);
+  transition: background 0.2s, color 0.2s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: transparent;
+    color: setting-color(a, contrast);
+  }
 }
 
 .c-button-alt--font-size-l {
