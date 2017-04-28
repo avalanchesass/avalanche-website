@@ -1,9 +1,9 @@
-@import '{ .c-button } from ~@avalanche/component-button';
+@import '{ .c-button as .c-button-alt } from ~@avalanche/component-button';
 
-.c-button--inverted {
+.c-button-alt--inverted {
   @include c-button-color(setting-color(a, contrast), setting-color(a));
 }
 
-.c-button--font-size-l {
+.c-button-alt--font-size-l {
   font-size: font-size(l);
 }
