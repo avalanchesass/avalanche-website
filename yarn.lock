@@ -49,6 +49,12 @@
   version "4.0.0-alpha.3"
   resolved "https://registry.yarnpkg.com/@avalanche/setting-spacings/-/setting-spacings-4.0.0-alpha.3.tgz#06af7b656caff50a27570aa415966f926caf9029"
 
+"@avalanche/stylelint-config@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@avalanche/stylelint-config/-/stylelint-config-0.1.0.tgz#9928bb303a55fcee3545f4a6edee0d024bdd7906"
+  dependencies:
+    stylelint-order "^0.3.0"
+
 "@avalanche/utility-text-align@^4.0.0-alpha.1":
   version "4.0.0-alpha.1"
   resolved "https://registry.yarnpkg.com/@avalanche/utility-text-align/-/utility-text-align-4.0.0-alpha.1.tgz#eb68b245611f89a28586dc76bbd5ec94c11aff7c"
@@ -4246,12 +4252,6 @@ stylehacks@^2.3.2:
     read-file-stdin "^0.2.1"
     text-table "^0.2.0"
     write-file-stdout "0.0.2"
-
-stylelint-config-modularis@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-modularis/-/stylelint-config-modularis-5.0.0.tgz#2ecc6d337bc808dcdd25fafb129612ffc95f822b"
-  dependencies:
-    stylelint-order "^0.3.0"
 
 stylelint-order@^0.3.0:
   version "0.3.0"

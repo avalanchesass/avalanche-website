@@ -1,3 +1,3 @@
 module.exports = {
-  extends: `stylelint-config-modularis`,
+  extends: `@avalanche/stylelint-config`,
 };
