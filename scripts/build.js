@@ -5,7 +5,7 @@ const buildPackageCss = require(`./build/package-css.js`);
 const buildPackageHtml = require(`./build/package-html.js`);
 const getDirectories = require(`./lib/get-directories.js`);
 
-const excludedPackages = [`cli`];
+const excludedPackages = [`cli`, `eslint-config`, `stylelint-config`];
 const packages = getDirectories(`avalanche/packages`)
   .filter(packageName => !excludedPackages.includes(packageName));
 
