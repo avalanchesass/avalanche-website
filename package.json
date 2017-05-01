@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@avalanche/component-button": "^4.0.0-alpha.1",
+    "@avalanche/eslint-config": "^0.1.0",
     "@avalanche/generic-box-sizing-reset": "^4.0.0-alpha.2",
     "@avalanche/object-container": "^4.0.0-alpha.3",
     "@avalanche/object-grid": "^4.0.0-alpha.7",
@@ -30,7 +31,6 @@
     "autoprefixer": "^6.7.7",
     "clean-css": "^4.0.12",
     "eslint": "^3.19.0",
-    "eslint-config-modularis": "^4.0.0",
     "eslint-plugin-import": "^2.2.0",
     "glob": "^7.1.1",
     "handlebars": "^4.0.6",
