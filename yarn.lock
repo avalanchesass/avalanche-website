@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@avalanche/component-button@^4.0.0-alpha.1":
-  version "4.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@avalanche/component-button/-/component-button-4.0.0-alpha.1.tgz#dadf5fe0554341b821c3b88beccc7ba1b6532ad7"
+"@avalanche/component-button@^4.0.0-alpha.2":
+  version "4.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@avalanche/component-button/-/component-button-4.0.0-alpha.2.tgz#25698cc9492e691dcfe4edcc2ae7ccf02ab1fe9a"
   dependencies:
     "@avalanche/setting-colors" "^4.0.0-alpha.1"
     "@avalanche/setting-spacings" "^4.0.0-alpha.3"
