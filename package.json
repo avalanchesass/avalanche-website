@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "@avalanche/component-button": "^4.0.0-alpha.2",
-    "@avalanche/eslint-config": "^0.1.0",
     "@avalanche/generic-box-sizing-reset": "^4.0.0-alpha.2",
     "@avalanche/object-container": "^4.0.0-alpha.3",
     "@avalanche/object-grid": "^4.0.0-alpha.7",
@@ -25,12 +24,14 @@
     "@avalanche/object-vertical-spacing": "^4.0.0-alpha.1",
     "@avalanche/setting-breakpoints": "^4.0.0-alpha.2",
     "@avalanche/setting-spacings": "^4.0.0-alpha.1",
-    "@avalanche/stylelint-config": "^0.1.0",
     "@avalanche/utility-text-align": "^4.0.0-alpha.1",
     "@avalanche/utility-width": "^4.0.0-alpha.3",
+    "normalize-scss": "^6.0.0",
     "reset-css": "^2.2.0"
   },
   "devDependencies": {
+    "@avalanche/eslint-config": "^0.1.0",
+    "@avalanche/stylelint-config": "^0.1.0",
     "autoprefixer": "^6.7.7",
     "clean-css": "^4.0.12",
     "eslint": "^3.19.0",
@@ -44,7 +45,6 @@
     "mkdirp": "^0.5.1",
     "node-sass": "^4.5.2",
     "node-sass-magic-importer": "^4.1.4",
-    "normalize-scss": "^6.0.0",
     "postcss": "^5.2.17",
     "postcss-scss": "^0.4.1",
     "sassdoc": "^2.2.2",
