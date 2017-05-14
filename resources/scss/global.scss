@@ -5,6 +5,8 @@
  * - Config switches.
  * - Brand colors, etc.
  */
+@import '~@avalanche/setting-colors';
+@import '~@avalanche/setting-font-sizes';
 @import '~@avalanche/setting-spacings';
 @import 'settings/**/*';
 
