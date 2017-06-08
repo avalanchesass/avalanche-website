@@ -2,15 +2,15 @@
 Website generator for the avalanche framework.
 
 ## Getting started
-- `yarn run init`
-- `yarn start`
+- `npm run init`
+- `npm start`
 
 ## Build
-- `yarn run build` (development)
-- `yarn run build:production` (production)
+- `npm run build` (development)
+- `npm run build:production` (production)
 
 ## Lint
-- `yarn run lint`
+- `npm run lint`
 
 ## About
 ### Author
