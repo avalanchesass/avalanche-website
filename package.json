@@ -58,7 +58,7 @@
     "uncss": "^0.14.1"
   },
   "scripts": {
-    "init": "git clone -b dev https://github.com/avalanchesass/avalanche.git && npm install && http2-server --generate-cert",
+    "init": "git clone https://github.com/avalanchesass/avalanche.git && npm install && http2-server --generate-cert",
     "start": "npm run build && http2-server dist -o -g -P",
     "build": "npm run clean && node scripts/build.js && npm run doc && cp -R resources/images dist && mv dist/images/favicon.ico dist && npm run copy-examples && sw-precache --root=dist",
     "build:production": "npm run clean && node scripts/build.js --minify && npm run doc && cp -R resources/images dist && mv dist/images/favicon.ico dist && npm run copy-examples && sw-precache --root=dist",
