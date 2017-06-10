@@ -65,7 +65,9 @@
     "copy-examples": "cp -R examples/* dist/examples && rm -Rf dist/examples/*/scss",
     "doc": "cd avalanche && sassdoc packages/*/scss/*.scss --dest ../dist/documentation --theme flippant",
     "clean": "rm -Rf dist",
-    "lint": "stylelint '+(examples|resources)/**/*.scss' && eslint scripts",
+    "lint:scripts": "eslint scripts",
+    "lint:styles": "stylelint '+(examples|resources)/**/*.scss'",
+    "lint": "npm run lint:scripts & npm run lint:styles",
     "lighthouse": "lighthouse https://127.0.0.1:4443/",
     "publish": "npm run build:production && rsync -avz --delete --exclude=/.* --exclude=/error --exclude=/robots.txt --exclude=/stats --exclude=/v3 -e ssh dist/ vs0.oberlehner.net:/var/www/avalanche.oberlehner.net/web"
   }
