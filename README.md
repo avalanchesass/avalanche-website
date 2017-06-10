@@ -2,15 +2,15 @@
 Website generator for the avalanche framework.
 
 ## Getting started
-- `npm run init`
-- `npm start`
+- `npm run init` Clone and init avalanche, install dependencies and create certificates.
+- `npm start` Build the website and start a local server.
 
 ## Build
-- `npm run build` (development)
-- `npm run build:production` (production)
+- `npm run build` Build the website (development build).
+- `npm run build:production` Build the website (production build).
 
 ## Lint
-- `npm run lint`
+- `npm run lint` Lint stylesheets and scripts.
 
 ## About
 ### Author
