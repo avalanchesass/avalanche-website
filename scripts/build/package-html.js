@@ -28,15 +28,14 @@ module.exports = (packageName, data) => {
   data.packageContent = marked(packageContent.replace(
     matchExamples,
     `XDIVclass=c-demoX\r\nXDIVclass=c-demo__viewX\r\n$1/XDIVX\r\n\`\`\`html$1\`\`\`\r\n/XDIVX`
-  ))
-  .replace(new RegExp(`<pre>`, `g`), `<pre class="c-highlight">`)
-  .replace(new RegExp(`class="hljs-`, `g`), `class="c-highlight__`)
-  .replace(new RegExp(`(<p>)?XDIVclass=(.*?)X(</p>)?`, `g`), `<div class="$2">`)
-  .replace(new RegExp(`/XDIVX`, `g`), `</div>`)
-  .replace(new RegExp(`<p><div`, `g`), `<div`)
-  .replace(new RegExp(`</div></p>`, `g`), `</div>`)
-  // Style links and make them SEO friendly.
-  .replace(new RegExp(`<a`, `g`), `<a class="c-anchor" rel="nofollow"`);
+  )).replace(new RegExp(`<pre>`, `g`), `<pre class="c-highlight">`)
+    .replace(new RegExp(`class="hljs-`, `g`), `class="c-highlight__`)
+    .replace(new RegExp(`(<p>)?XDIVclass=(.*?)X(</p>)?`, `g`), `<div class="$2">`)
+    .replace(new RegExp(`/XDIVX`, `g`), `</div>`)
+    .replace(new RegExp(`<p><div`, `g`), `<div`)
+    .replace(new RegExp(`</div></p>`, `g`), `</div>`)
+    // Style links and make them SEO friendly.
+    .replace(new RegExp(`<a`, `g`), `<a class="c-anchor" rel="nofollow"`);
 
   // eslint-disable-next-line no-param-reassign
   data.metaDescription = data.packageContent.match(/<p>(.*?)<\/p>/)[1];
