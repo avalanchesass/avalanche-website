@@ -7,5 +7,11 @@ module.exports = (packageName) => {
   const inputFile = path.join(packagePath, `scss`, `index.scss`);
   const outputFile = path.join(process.cwd(), `dist`, `packages`, packageName, `css`, `index.css`);
 
-  sass2css(inputFile, outputFile, { cwd: packagePath });
+  sass2css(
+    inputFile,
+    outputFile,
+    {},
+    false,
+    [path.join(process.cwd(), `avalanche/packages/${packageName}/scss/sub/dir/dir`)]
+  );
 };

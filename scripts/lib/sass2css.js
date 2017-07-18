@@ -7,10 +7,17 @@ const sass = require(`node-sass`);
 
 const writeFile = require(`./write-file.js`);
 
-module.exports = (inputFile, outputFile, options = { cwd: process.cwd() }, clean = false) => {
+module.exports = (
+  inputFile,
+  outputFile,
+  options = { cwd: process.cwd() },
+  clean = false,
+  includePaths = []
+) => {
   sass.render({
     file: inputFile,
     importer: magicImporter(options),
+    includePaths,
   }, (error, result) => {
     if (error) throw error;
 
