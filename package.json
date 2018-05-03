@@ -20,7 +20,7 @@
     "lint:styles": "stylelint '+(examples|resources)/**/*.scss'",
     "lint": "npm run lint:scripts & npm run lint:styles",
     "lighthouse": "lighthouse https://127.0.0.1:4443/",
-    "deploy": "git clone https://github.com/avalanchesass/avalanche.git && (cd avalanche && npm run init) && npm run build && npm run build:production"
+    "deploy": "rm -Rf avalanche && git clone https://github.com/avalanchesass/avalanche.git && (cd avalanche && npm run init) && npm run build && npm run build:production"
   },
   "repository": {
     "type": "git",
