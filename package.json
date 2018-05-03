@@ -12,7 +12,7 @@
     "init": "git clone https://github.com/avalanchesass/avalanche.git && (cd avalanche && npm run init) && npm install && http2-server --generate-cert",
     "start": "npm run build && http2-server dist -o -g -P",
     "build": "npm run clean && node scripts/build.js && npm run doc && cp -R resources/images dist && mv dist/images/favicon.ico dist && npm run copy-examples && sw-precache --root=dist",
-    "build:production": "npm run clean && node scripts/build.js --minify && npm run doc && cp -R resources/images dist && mv dist/images/favicon.ico dist && npm run copy-examples && sw-precache --root=dist",
+    "build:production": "node scripts/build.js --minify && npm run doc && cp -R resources/images dist && mv dist/images/favicon.ico dist && npm run copy-examples && sw-precache --root=dist",
     "copy-examples": "cp -R examples/* dist/examples && rm -Rf dist/examples/*/scss",
     "doc": "cd avalanche && sassdoc packages/*/scss/*.scss --dest ../dist/documentation --theme flippant",
     "clean": "rm -Rf dist",
@@ -20,7 +20,7 @@
     "lint:styles": "stylelint '+(examples|resources)/**/*.scss'",
     "lint": "npm run lint:scripts & npm run lint:styles",
     "lighthouse": "lighthouse https://127.0.0.1:4443/",
-    "deploy": "git clone https://github.com/avalanchesass/avalanche.git && (cd avalanche && npm run init) && npm run build:production"
+    "deploy": "git clone https://github.com/avalanchesass/avalanche.git && (cd avalanche && npm run init) && npm run build && npm run build:production"
   },
   "repository": {
     "type": "git",
