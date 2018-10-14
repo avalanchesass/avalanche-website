@@ -22,6 +22,7 @@ module.exports = (
     if (error) throw error;
 
     let css = result.css.toString();
+    // eslint-disable-next-line prefer-destructuring
     css = postcss(autoprefixer).process(css, { syntax: postcssScssSyntax }).css;
 
     if (clean) {
