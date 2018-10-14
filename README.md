@@ -2,7 +2,7 @@
 Website generator for the avalanche framework.
 
 ## Getting started
-- `npm run init` Clone and init avalanche, install dependencies and create certificates.
+- `npm run bootstrap` Clone and init avalanche, install dependencies and create certificates.
 - `npm start` Build the website and start a local server.
 
 ## Build

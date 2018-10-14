@@ -9,7 +9,7 @@
   "homepage": "https://avalanche.oberlehner.net",
   "license": "MIT",
   "scripts": {
-    "init": "git clone https://github.com/avalanchesass/avalanche.git && (cd avalanche && npm run init) && npm install && http2-server --generate-cert",
+    "bootstrap": "git clone https://github.com/avalanchesass/avalanche.git && (cd avalanche && npm install && npm run bootstrap) && npm install && http2-server --generate-cert",
     "start": "npm run build && http2-server dist -o -g -P",
     "build": "npm run clean && node scripts/build.js && npm run doc && cp -R resources/images dist && mv dist/images/favicon.ico dist && npm run copy-examples && sw-precache --root=dist",
     "build:production": "node scripts/build.js --minify && npm run doc && cp -R resources/images dist && mv dist/images/favicon.ico dist && npm run copy-examples && sw-precache --root=dist && cp resources/_redirects dist",
@@ -20,7 +20,7 @@
     "lint:styles": "stylelint '+(examples|resources)/**/*.scss'",
     "lint": "npm run lint:scripts & npm run lint:styles",
     "lighthouse": "lighthouse https://127.0.0.1:4443/",
-    "deploy": "rm -Rf avalanche && git clone https://github.com/avalanchesass/avalanche.git && (cd avalanche && npm run init) && npm run build && npm run build:production"
+    "deploy": "rm -Rf avalanche && git clone https://github.com/avalanchesass/avalanche.git && (cd avalanche && npm install && npm run bootstrap) && npm run build && npm run build:production"
   },
   "repository": {
     "type": "git",
